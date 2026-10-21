@@ -1,0 +1,2641 @@
+{
+  "mode": "FULL",
+  "eps_rows": [
+    0.25,
+    0.75,
+    1.25,
+    1.75,
+    2.25,
+    2.75,
+    3.25,
+    3.75,
+    4.25,
+    4.75
+  ],
+  "runtime_this_session_s": 8974.3,
+  "totals": {
+    "variants": 36,
+    "with_holding": 34,
+    "tested": 2536,
+    "stable_fixed": 921,
+    "violations": 0,
+    "violations_nonmarginal": 0,
+    "index_negative": 737,
+    "index_negative_stable": 0,
+    "no_fixed_lock": 26,
+    "homotopy_folds": 1
+  },
+  "totals_by_group": {
+    "STRUCT": {
+      "variants": 13,
+      "with_holding": 11,
+      "tested": 851,
+      "stable_fixed": 303,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative": 271,
+      "index_negative_stable": 0,
+      "no_fixed_lock": 4,
+      "homotopy_folds": 0
+    },
+    "WAKE": {
+      "variants": 3,
+      "with_holding": 3,
+      "tested": 211,
+      "stable_fixed": 87,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative": 68,
+      "index_negative_stable": 0,
+      "no_fixed_lock": 2,
+      "homotopy_folds": 0
+    },
+    "LHS": {
+      "variants": 20,
+      "with_holding": 20,
+      "tested": 1474,
+      "stable_fixed": 531,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative": 398,
+      "index_negative_stable": 0,
+      "no_fixed_lock": 20,
+      "homotopy_folds": 1
+    }
+  },
+  "results": [
+    {
+      "name": "baseline",
+      "override": {},
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 44,
+      "n_orbits": 269,
+      "n_stable": 27,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 24,
+        "relaxed": 3
+      },
+      "n_torus_unstable": 114,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.02,
+        1.1325000000000003
+      ],
+      "stable_x_range": [
+        0.5388722153490418,
+        1.0981916001763312
+      ],
+      "tested": 67,
+      "n_fixed": 63,
+      "n_stable_fixed": 23,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 20,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 21,
+          "stable": 1,
+          "stable_aL_neg": 1,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 42,
+          "stable": 22,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 22
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 211.1,
+      "runtime_s": 247.3,
+      "group": "STRUCT"
+    },
+    {
+      "name": "linear lift + lever arm",
+      "override": {
+        "lift": "linear",
+        "LT": 0.5
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 56,
+      "n_orbits": 400,
+      "n_stable": 163,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 158,
+        "relaxed": 5
+      },
+      "n_torus_unstable": 46,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.01,
+        1.1200000000000003
+      ],
+      "stable_x_range": [
+        0.2506392616484366,
+        1.4682240322586033
+      ],
+      "tested": 160,
+      "n_fixed": 131,
+      "n_stable_fixed": 103,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 25,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 25,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 106,
+          "stable": 103,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 103
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 228.6,
+      "runtime_s": 273.3,
+      "group": "STRUCT"
+    },
+    {
+      "name": "added reactive thrust",
+      "override": {
+        "c_T": 0.1
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 32,
+      "n_orbits": 154,
+      "n_stable": 73,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 42,
+        "relaxed": 31
+      },
+      "n_torus_unstable": 10,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.02,
+        1.1275000000000002
+      ],
+      "stable_x_range": [
+        1.243303064202665,
+        1.7046905780597186
+      ],
+      "tested": 113,
+      "n_fixed": 112,
+      "n_stable_fixed": 72,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 34,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 34,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 78,
+          "stable": 72,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 72
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 170.0,
+      "runtime_s": 214.2,
+      "group": "STRUCT"
+    },
+    {
+      "name": "reactive thrust only",
+      "override": {
+        "tilt": 0.0,
+        "c_T": 0.3
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 0,
+      "n_orbits": 0,
+      "n_stable": 0,
+      "holding": false,
+      "runtime_s": 7.2,
+      "note": "no prescribed equilibria",
+      "group": "STRUCT"
+    },
+    {
+      "name": "lift lag",
+      "override": {
+        "tau": 0.08
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "Lf",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 46,
+      "n_orbits": 181,
+      "n_stable": 39,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 38,
+        "relaxed": 1
+      },
+      "n_torus_unstable": 40,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.0150000000000001,
+        1.1125000000000003
+      ],
+      "stable_x_range": [
+        0.5263887386637949,
+        1.118525371037934
+      ],
+      "tested": 79,
+      "n_fixed": 51,
+      "n_stable_fixed": 11,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 26,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 27,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 24,
+          "stable": 11,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 11
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 215.1,
+      "runtime_s": 262.0,
+      "group": "STRUCT"
+    },
+    {
+      "name": "lift lag + added mass",
+      "override": {
+        "tau": 0.08,
+        "m_a": 0.5
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "Lf",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 46,
+      "n_orbits": 182,
+      "n_stable": 10,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 10,
+        "relaxed": 0
+      },
+      "n_torus_unstable": 71,
+      "stable_eps_range": [
+        0.75,
+        2.25
+      ],
+      "stable_ratio_range": [
+        1.0150000000000001,
+        1.045
+      ],
+      "stable_x_range": [
+        0.5269261346941659,
+        1.0730179099853923
+      ],
+      "tested": 50,
+      "n_fixed": 35,
+      "n_stable_fixed": 4,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 18,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 18,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 17,
+          "stable": 4,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 4
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 215.6,
+      "runtime_s": 261.7,
+      "group": "STRUCT"
+    },
+    {
+      "name": "pitch + free heave",
+      "override": {
+        "heave": true,
+        "Om_y_ratio": 0.25
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "y",
+        "vy",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 40,
+      "n_orbits": 264,
+      "n_stable": 27,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 23,
+        "relaxed": 4
+      },
+      "n_torus_unstable": 103,
+      "stable_eps_range": [
+        0.75,
+        4.25
+      ],
+      "stable_ratio_range": [
+        1.02,
+        1.1200000000000006
+      ],
+      "stable_x_range": [
+        0.5157242230532831,
+        1.02827430995657
+      ],
+      "tested": 67,
+      "n_fixed": 62,
+      "n_stable_fixed": 22,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 21,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 21,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 41,
+          "stable": 22,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 22
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 1,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 253.6,
+      "runtime_s": 313.8,
+      "group": "STRUCT"
+    },
+    {
+      "name": "pitch + resonant heave",
+      "override": {
+        "heave": true,
+        "Om_y_ratio": 1.0
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "y",
+        "vy",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 24,
+      "n_orbits": 88,
+      "n_stable": 0,
+      "holding": false,
+      "stable_by_seed": {
+        "prescribed": 0,
+        "relaxed": 0
+      },
+      "n_torus_unstable": 19,
+      "stable_eps_range": null,
+      "stable_ratio_range": null,
+      "stable_x_range": null,
+      "tested": 40,
+      "n_fixed": 40,
+      "n_stable_fixed": 0,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 29,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 29,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 11,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 187.0,
+      "runtime_s": 232.7,
+      "group": "STRUCT"
+    },
+    {
+      "name": "pitch + stiff heave",
+      "override": {
+        "heave": true,
+        "Om_y_ratio": 2.0
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "y",
+        "vy",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 40,
+      "n_orbits": 241,
+      "n_stable": 22,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 22,
+        "relaxed": 0
+      },
+      "n_torus_unstable": 106,
+      "stable_eps_range": [
+        0.75,
+        4.25
+      ],
+      "stable_ratio_range": [
+        1.02,
+        1.1225000000000005
+      ],
+      "stable_x_range": [
+        0.5302734283757987,
+        1.0525520103745194
+      ],
+      "tested": 62,
+      "n_fixed": 58,
+      "n_stable_fixed": 18,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 17,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 18,
+          "stable": 1,
+          "stable_aL_neg": 1,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 40,
+          "stable": 17,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 17
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 1,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 253.6,
+      "runtime_s": 321.4,
+      "group": "STRUCT"
+    },
+    {
+      "name": "two-mode body",
+      "override": {
+        "mode2": true
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "th2",
+        "om2",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 44,
+      "n_orbits": 274,
+      "n_stable": 36,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 33,
+        "relaxed": 3
+      },
+      "n_torus_unstable": 112,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.0150000000000001,
+        1.145000000000001
+      ],
+      "stable_x_range": [
+        0.527367473024651,
+        1.1614916254087784
+      ],
+      "tested": 76,
+      "n_fixed": 74,
+      "n_stable_fixed": 34,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 17,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 20,
+          "stable": 3,
+          "stable_aL_neg": 3,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 54,
+          "stable": 31,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 31
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 2,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 240.0,
+      "runtime_s": 316.6,
+      "group": "STRUCT"
+    },
+    {
+      "name": "van der Pol CPG",
+      "override": {
+        "cpg": "vdp"
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 44,
+      "n_orbits": 104,
+      "n_stable": 1,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 0,
+        "relaxed": 1
+      },
+      "n_torus_unstable": 0,
+      "stable_eps_range": [
+        0.75,
+        0.75
+      ],
+      "stable_ratio_range": [
+        1.1,
+        1.1
+      ],
+      "stable_x_range": [
+        0.5502500109170744,
+        0.5502500109170744
+      ],
+      "tested": 41,
+      "n_fixed": 41,
+      "n_stable_fixed": 1,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 27,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 28,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 13,
+          "stable": 1,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 1
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 201.8,
+      "runtime_s": 232.5,
+      "group": "STRUCT"
+    },
+    {
+      "name": "lateral line + proprio",
+      "override": {
+        "eLL": 1.0
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 44,
+      "n_orbits": 481,
+      "n_stable": 7,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 7,
+        "relaxed": 0
+      },
+      "n_torus_unstable": 238,
+      "stable_eps_range": [
+        0.25,
+        1.25
+      ],
+      "stable_ratio_range": [
+        1.01,
+        1.065
+      ],
+      "stable_x_range": [
+        0.536909739951675,
+        0.9636741321075423
+      ],
+      "tested": 47,
+      "n_fixed": 46,
+      "n_stable_fixed": 6,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 15,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 15,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 31,
+          "stable": 6,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 6
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 184.4,
+      "runtime_s": 215.3,
+      "group": "STRUCT"
+    },
+    {
+      "name": "lateral line only",
+      "override": {
+        "eLL": 1.0,
+        "wp": 0.0
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 44,
+      "n_orbits": 493,
+      "n_stable": 9,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 9,
+        "relaxed": 0
+      },
+      "n_torus_unstable": 218,
+      "stable_eps_range": [
+        0.25,
+        3.25
+      ],
+      "stable_ratio_range": [
+        0.9774999999999999,
+        1.0574999999999999
+      ],
+      "stable_x_range": [
+        0.5592084864195476,
+        1.1709295128215165
+      ],
+      "tested": 49,
+      "n_fixed": 49,
+      "n_stable_fixed": 9,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 22,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 22,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 27,
+          "stable": 9,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 9
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 185.4,
+      "runtime_s": 212.5,
+      "group": "STRUCT"
+    },
+    {
+      "name": "plateau deficit",
+      "override": {
+        "shape": 1.0
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 48,
+      "n_orbits": 237,
+      "n_stable": 10,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 6,
+        "relaxed": 4
+      },
+      "n_torus_unstable": 64,
+      "stable_eps_range": [
+        0.75,
+        4.25
+      ],
+      "stable_ratio_range": [
+        1.02,
+        1.1150000000000004
+      ],
+      "stable_x_range": [
+        0.7879347498258434,
+        0.9722346125714587
+      ],
+      "tested": 50,
+      "n_fixed": 40,
+      "n_stable_fixed": 6,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 22,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 25,
+          "stable": 3,
+          "stable_aL_neg": 3,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 15,
+          "stable": 3,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 3
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 2,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 226.2,
+      "runtime_s": 295.6,
+      "group": "WAKE"
+    },
+    {
+      "name": "algebraic decay",
+      "override": {
+        "shape": 2.0
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 74,
+      "n_orbits": 157,
+      "n_stable": 74,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 32,
+        "relaxed": 42
+      },
+      "n_torus_unstable": 20,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.02,
+        1.1750000000000007
+      ],
+      "stable_x_range": [
+        1.2106516495617596,
+        2.5072901771501725
+      ],
+      "tested": 114,
+      "n_fixed": 113,
+      "n_stable_fixed": 74,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 24,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 27,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 86,
+          "stable": 74,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 74
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 331.2,
+      "runtime_s": 373.7,
+      "group": "WAKE"
+    },
+    {
+      "name": "bump envelope",
+      "override": {
+        "shape": 3.0
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 38,
+      "n_orbits": 189,
+      "n_stable": 7,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 3,
+        "relaxed": 4
+      },
+      "n_torus_unstable": 57,
+      "stable_eps_range": [
+        0.75,
+        3.75
+      ],
+      "stable_ratio_range": [
+        1.02,
+        1.1000000000000005
+      ],
+      "stable_x_range": [
+        0.6915340494356662,
+        0.876690223637692
+      ],
+      "tested": 47,
+      "n_fixed": 47,
+      "n_stable_fixed": 7,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 22,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 23,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 24,
+          "stable": 7,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 7
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 171.3,
+      "runtime_s": 201.1,
+      "group": "WAKE"
+    },
+    {
+      "name": "LHS 00",
+      "override": {
+        "body_ratio": 1.2623407976695011,
+        "zeta": 0.23945712561900082,
+        "g": 16.192736683365304,
+        "mu": 5.860590880636072,
+        "W0": 0.36291200388681527,
+        "c_D": 0.17212021244658565,
+        "c_L": 2.7023175472004257,
+        "sigma": 9.972098128857578,
+        "x_r": 0.3158159475091903,
+        "l_w": 1.6229874877114958,
+        "delta0": 1.2303332720914415
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 32,
+      "n_orbits": 226,
+      "n_stable": 15,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 14,
+        "relaxed": 1
+      },
+      "n_torus_unstable": 76,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.02,
+        1.0950000000000002
+      ],
+      "stable_x_range": [
+        0.6110106328662352,
+        0.9647363568825823
+      ],
+      "tested": 55,
+      "n_fixed": 49,
+      "n_stable_fixed": 9,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 28,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 29,
+          "stable": 1,
+          "stable_aL_neg": 1,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 20,
+          "stable": 8,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 8
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 1,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 170.3,
+      "runtime_s": 211.4,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 01",
+      "override": {
+        "body_ratio": 1.0762801303850023,
+        "zeta": 0.20874869662269674,
+        "g": 20.28554098481699,
+        "mu": 6.118960594368547,
+        "W0": 0.27928386885239725,
+        "c_D": 0.14856365344483166,
+        "c_L": 3.3319770405527938,
+        "sigma": 6.604345289100947,
+        "x_r": 0.428185389263973,
+        "l_w": 1.3478182009917112,
+        "delta0": 1.2498453350754983
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 44,
+      "n_orbits": 112,
+      "n_stable": 56,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 40,
+        "relaxed": 16
+      },
+      "n_torus_unstable": 2,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.05,
+        1.3125000000000004
+      ],
+      "stable_x_range": [
+        0.4543555869450356,
+        1.1269450539463615
+      ],
+      "tested": 96,
+      "n_fixed": 83,
+      "n_stable_fixed": 55,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 25,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 82,
+          "stable": 55,
+          "stable_aL_neg": 55,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "unstable-complex": {
+          "n": 1,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 213.2,
+      "runtime_s": 253.8,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 02",
+      "override": {
+        "body_ratio": 1.0099573481666502,
+        "zeta": 0.2437164363515912,
+        "g": 13.504187495793808,
+        "mu": 12.242773503408173,
+        "W0": 0.29530713760646554,
+        "c_D": 0.10270044206040978,
+        "c_L": 2.6768980647391367,
+        "sigma": 6.3392398983207,
+        "x_r": 0.44632426408917747,
+        "l_w": 1.4226283517516238,
+        "delta0": 1.3748763922655136
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 60,
+      "n_orbits": 116,
+      "n_stable": 8,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 6,
+        "relaxed": 2
+      },
+      "n_torus_unstable": 0,
+      "stable_eps_range": [
+        0.75,
+        1.75
+      ],
+      "stable_ratio_range": [
+        1.04,
+        1.09
+      ],
+      "stable_x_range": [
+        0.4877958377151973,
+        1.19745150602918
+      ],
+      "tested": 48,
+      "n_fixed": 38,
+      "n_stable_fixed": 4,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 21,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 21,
+          "stable": 1,
+          "stable_aL_neg": 1,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 16,
+          "stable": 3,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 3
+        },
+        "unstable-complex": {
+          "n": 1,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 256.0,
+      "runtime_s": 291.6,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 03",
+      "override": {
+        "body_ratio": 1.0249655838977334,
+        "zeta": 0.28267770074258813,
+        "g": 12.90448865960377,
+        "mu": 10.378697523674955,
+        "W0": 0.33273853477920684,
+        "c_D": 0.1671119801338667,
+        "c_L": 3.262240439519835,
+        "sigma": 9.626225610225683,
+        "x_r": 0.36907979189198026,
+        "l_w": 1.7298933265326144,
+        "delta0": 1.2977279144347358
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 44,
+      "n_orbits": 351,
+      "n_stable": 10,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 10,
+        "relaxed": 0
+      },
+      "n_torus_unstable": 71,
+      "stable_eps_range": [
+        0.25,
+        2.25
+      ],
+      "stable_ratio_range": [
+        1.01,
+        1.0450000000000004
+      ],
+      "stable_x_range": [
+        0.5580574105499835,
+        1.1596091442172611
+      ],
+      "tested": 50,
+      "n_fixed": 47,
+      "n_stable_fixed": 8,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 18,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 18,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 29,
+          "stable": 8,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 8
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 185.2,
+      "runtime_s": 217.5,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 04",
+      "override": {
+        "body_ratio": 1.3155337231200173,
+        "zeta": 0.18529811982749672,
+        "g": 22.750189215064687,
+        "mu": 8.07961357949371,
+        "W0": 0.3111396803242365,
+        "c_D": 0.19612304080649323,
+        "c_L": 3.3631370696379452,
+        "sigma": 6.503210593271758,
+        "x_r": 0.43769356124215075,
+        "l_w": 1.4431216514631866,
+        "delta0": 1.3052944634812198
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 40,
+      "n_orbits": 116,
+      "n_stable": 52,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 45,
+        "relaxed": 7
+      },
+      "n_torus_unstable": 20,
+      "stable_eps_range": [
+        0.25,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.01,
+        1.1550000000000002
+      ],
+      "stable_x_range": [
+        0.4069837503723467,
+        1.0235928391263127
+      ],
+      "tested": 92,
+      "n_fixed": 82,
+      "n_stable_fixed": 44,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 24,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 22,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 60,
+          "stable": 44,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 44
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 1,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 174.9,
+      "runtime_s": 249.3,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 05",
+      "override": {
+        "body_ratio": 1.1395845657837913,
+        "zeta": 0.13654310212592075,
+        "g": 21.82508587894368,
+        "mu": 11.573595977591015,
+        "W0": 0.2889781595206351,
+        "c_D": 0.1161656549786703,
+        "c_L": 3.119353550741253,
+        "sigma": 8.27849941997911,
+        "x_r": 0.33370086873965155,
+        "l_w": 1.406370012033744,
+        "delta0": 1.2612317883371218
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 72,
+      "n_orbits": 230,
+      "n_stable": 45,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 24,
+        "relaxed": 21
+      },
+      "n_torus_unstable": 108,
+      "stable_eps_range": [
+        0.75,
+        2.75
+      ],
+      "stable_ratio_range": [
+        1.025,
+        1.175
+      ],
+      "stable_x_range": [
+        0.29667617206713276,
+        1.3409004421845303
+      ],
+      "tested": 85,
+      "n_fixed": 56,
+      "n_stable_fixed": 42,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 9,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 51,
+          "stable": 42,
+          "stable_aL_neg": 42,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 5,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 2,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 263.4,
+      "runtime_s": 336.6,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 06",
+      "override": {
+        "body_ratio": 1.3507668646815256,
+        "zeta": 0.14160593268301763,
+        "g": 17.26914095597345,
+        "mu": 9.016217956646628,
+        "W0": 0.44091498878271285,
+        "c_D": 0.22000612809754838,
+        "c_L": 2.7742000800285846,
+        "sigma": 7.290458561391494,
+        "x_r": 0.3864700884278784,
+        "l_w": 1.5208950160986061,
+        "delta0": 1.3245157699163908
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 34,
+      "n_orbits": 174,
+      "n_stable": 31,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 26,
+        "relaxed": 5
+      },
+      "n_torus_unstable": 63,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.01,
+        1.1150000000000002
+      ],
+      "stable_x_range": [
+        0.6361657433716572,
+        1.0395558948020527
+      ],
+      "tested": 71,
+      "n_fixed": 66,
+      "n_stable_fixed": 26,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 21,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 21,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 45,
+          "stable": 26,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 26
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 1,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 178.0,
+      "runtime_s": 249.5,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 07",
+      "override": {
+        "body_ratio": 1.2147430044524157,
+        "zeta": 0.1155946453561055,
+        "g": 20.83773982095774,
+        "mu": 3.695963249244172,
+        "W0": 0.2603830831744226,
+        "c_D": 0.13943588158302037,
+        "c_L": 3.1578868970373764,
+        "sigma": 6.153546327832854,
+        "x_r": 0.41543817293137814,
+        "l_w": 1.6576206349014548,
+        "delta0": 1.2200754858233251
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 48,
+      "n_orbits": 102,
+      "n_stable": 66,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 9,
+        "relaxed": 57
+      },
+      "n_torus_unstable": 25,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.02,
+        1.1975
+      ],
+      "stable_x_range": [
+        0.3766475356934379,
+        1.2005980393716702
+      ],
+      "tested": 102,
+      "n_fixed": 43,
+      "n_stable_fixed": 21,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 6,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 9,
+          "stable": 5,
+          "stable_aL_neg": 5,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 34,
+          "stable": 16,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 16
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 2,
+      "homotopy_folds": 1,
+      "runtime_grid_s": 226.3,
+      "runtime_s": 302.7,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 08",
+      "override": {
+        "body_ratio": 1.0998552137769673,
+        "zeta": 0.22438948253102164,
+        "g": 23.242405705569503,
+        "mu": 4.335307070852107,
+        "W0": 0.40112119526883,
+        "c_D": 0.23817125250584534,
+        "c_L": 2.872029214124101,
+        "sigma": 6.818119189300638,
+        "x_r": 0.36103638409130384,
+        "l_w": 1.2571053770291436,
+        "delta0": 1.3829988794563957
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 48,
+      "n_orbits": 16,
+      "n_stable": 3,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 3,
+        "relaxed": 0
+      },
+      "n_torus_unstable": 3,
+      "stable_eps_range": [
+        0.75,
+        1.25
+      ],
+      "stable_ratio_range": [
+        1.0550000000000002,
+        1.0950000000000002
+      ],
+      "stable_x_range": [
+        0.5119450525143299,
+        0.7054770965827643
+      ],
+      "tested": 16,
+      "n_fixed": 8,
+      "n_stable_fixed": 2,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 4,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 7,
+          "stable": 2,
+          "stable_aL_neg": 2,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 1,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 197.0,
+      "runtime_s": 226.2,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 09",
+      "override": {
+        "body_ratio": 1.1006025499275065,
+        "zeta": 0.27001664794852515,
+        "g": 14.67338675602263,
+        "mu": 6.562635904976439,
+        "W0": 0.3975262730077527,
+        "c_D": 0.24371603498766586,
+        "c_L": 2.5544210112405583,
+        "sigma": 8.609807337428673,
+        "x_r": 0.42613409143635206,
+        "l_w": 1.3163422934948377,
+        "delta0": 1.2763516901993053
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 32,
+      "n_orbits": 149,
+      "n_stable": 9,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 9,
+        "relaxed": 0
+      },
+      "n_torus_unstable": 24,
+      "stable_eps_range": [
+        0.25,
+        1.75
+      ],
+      "stable_ratio_range": [
+        1.01,
+        1.0675
+      ],
+      "stable_x_range": [
+        0.45073733928124726,
+        0.762297443496146
+      ],
+      "tested": 49,
+      "n_fixed": 44,
+      "n_stable_fixed": 8,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 26,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 26,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 18,
+          "stable": 8,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 8
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 1,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 153.1,
+      "runtime_s": 192.2,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 10",
+      "override": {
+        "body_ratio": 1.3319795530473353,
+        "zeta": 0.19418829785120317,
+        "g": 19.011200169159657,
+        "mu": 5.326210268614352,
+        "W0": 0.43934088556502193,
+        "c_D": 0.20753364702100052,
+        "c_L": 3.4749635592639176,
+        "sigma": 9.387562116613381,
+        "x_r": 0.41149407600691235,
+        "l_w": 1.7838619762591643,
+        "delta0": 1.2118019341697965
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 44,
+      "n_orbits": 298,
+      "n_stable": 77,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 66,
+        "relaxed": 11
+      },
+      "n_torus_unstable": 88,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.01,
+        1.1249999999999996
+      ],
+      "stable_x_range": [
+        0.5576529640416336,
+        1.2264431332347898
+      ],
+      "tested": 117,
+      "n_fixed": 114,
+      "n_stable_fixed": 74,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 23,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 24,
+          "stable": 1,
+          "stable_aL_neg": 1,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 90,
+          "stable": 73,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 73
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 2,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 212.8,
+      "runtime_s": 257.6,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 11",
+      "override": {
+        "body_ratio": 1.3793459055558315,
+        "zeta": 0.29399898893218995,
+        "g": 14.302380530647344,
+        "mu": 7.5423392919241925,
+        "W0": 0.34095687817230436,
+        "c_D": 0.1876042869078811,
+        "c_L": 3.4269893106692875,
+        "sigma": 7.497247379135044,
+        "x_r": 0.35673515348741874,
+        "l_w": 1.478358337753669,
+        "delta0": 1.3191699066058615
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 24,
+      "n_orbits": 141,
+      "n_stable": 2,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 2,
+        "relaxed": 0
+      },
+      "n_torus_unstable": 45,
+      "stable_eps_range": [
+        2.75,
+        4.25
+      ],
+      "stable_ratio_range": [
+        1.0374999999999999,
+        1.0575
+      ],
+      "stable_x_range": [
+        0.8038998070862385,
+        0.8330449671232629
+      ],
+      "tested": 42,
+      "n_fixed": 41,
+      "n_stable_fixed": 2,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 17,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 17,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 24,
+          "stable": 2,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 2
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 158.7,
+      "runtime_s": 190.5,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 12",
+      "override": {
+        "body_ratio": 1.0423467314768664,
+        "zeta": 0.2596338925628203,
+        "g": 19.377415784273683,
+        "mu": 5.003706955875186,
+        "W0": 0.41637819393103004,
+        "c_D": 0.15804484359830384,
+        "c_L": 2.9693769339156324,
+        "sigma": 9.482211210201683,
+        "x_r": 0.30216263481004657,
+        "l_w": 1.5547681106441555,
+        "delta0": 1.3963474181760693
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 72,
+      "n_orbits": 224,
+      "n_stable": 54,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 38,
+        "relaxed": 16
+      },
+      "n_torus_unstable": 18,
+      "stable_eps_range": [
+        0.25,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.01,
+        1.2025000000000006
+      ],
+      "stable_x_range": [
+        0.6749360892539163,
+        1.46302193182214
+      ],
+      "tested": 94,
+      "n_fixed": 49,
+      "n_stable_fixed": 14,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 32,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 41,
+          "stable": 8,
+          "stable_aL_neg": 8,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 8,
+          "stable": 6,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 6
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 7,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 256.2,
+      "runtime_s": 329.5,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 13",
+      "override": {
+        "body_ratio": 1.2844620298998783,
+        "zeta": 0.1605451481142387,
+        "g": 17.857900368813894,
+        "mu": 10.887299111879948,
+        "W0": 0.25652011440912226,
+        "c_D": 0.18113785303904573,
+        "c_L": 2.9246556502534444,
+        "sigma": 7.030451882743694,
+        "x_r": 0.31499582038748225,
+        "l_w": 1.5901349197236334,
+        "delta0": 1.250254493883644
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 32,
+      "n_orbits": 114,
+      "n_stable": 25,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 22,
+        "relaxed": 3
+      },
+      "n_torus_unstable": 39,
+      "stable_eps_range": [
+        0.75,
+        3.75
+      ],
+      "stable_ratio_range": [
+        1.0150000000000001,
+        1.1300000000000003
+      ],
+      "stable_x_range": [
+        0.43098180021433585,
+        0.8488923475320891
+      ],
+      "tested": 65,
+      "n_fixed": 59,
+      "n_stable_fixed": 19,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 23,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 24,
+          "stable": 1,
+          "stable_aL_neg": 1,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 35,
+          "stable": 18,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 18
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 153.0,
+      "runtime_s": 189.4,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 14",
+      "override": {
+        "body_ratio": 1.1710045677796674,
+        "zeta": 0.26928546033505385,
+        "g": 23.689202000913074,
+        "mu": 3.4161718478855025,
+        "W0": 0.32526337696082375,
+        "c_D": 0.2336064735130089,
+        "c_L": 3.0784497915672633,
+        "sigma": 8.900618100673782,
+        "x_r": 0.3983954752707375,
+        "l_w": 1.228548617628458,
+        "delta0": 1.3542923062922099
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 44,
+      "n_orbits": 104,
+      "n_stable": 14,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 12,
+        "relaxed": 2
+      },
+      "n_torus_unstable": 38,
+      "stable_eps_range": [
+        0.75,
+        2.75
+      ],
+      "stable_ratio_range": [
+        1.0350000000000001,
+        1.1400000000000001
+      ],
+      "stable_x_range": [
+        0.47835993063857907,
+        0.8160766190852563
+      ],
+      "tested": 54,
+      "n_fixed": 31,
+      "n_stable_fixed": 5,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 17,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 22,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 9,
+          "stable": 5,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 5
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 1,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 187.1,
+      "runtime_s": 229.8,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 15",
+      "override": {
+        "body_ratio": 1.2544465462143959,
+        "zeta": 0.15908319492422227,
+        "g": 15.320588681665042,
+        "mu": 9.54319588966915,
+        "W0": 0.35003855378797993,
+        "c_D": 0.19992083691995205,
+        "c_L": 3.226069174887024,
+        "sigma": 9.133246883208109,
+        "x_r": 0.3441114781601545,
+        "l_w": 1.2888881556283862,
+        "delta0": 1.34895903234643
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 36,
+      "n_orbits": 196,
+      "n_stable": 11,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 10,
+        "relaxed": 1
+      },
+      "n_torus_unstable": 72,
+      "stable_eps_range": [
+        0.75,
+        2.75
+      ],
+      "stable_ratio_range": [
+        1.02,
+        1.0750000000000002
+      ],
+      "stable_x_range": [
+        0.6228677681731181,
+        0.8986714898056992
+      ],
+      "tested": 51,
+      "n_fixed": 47,
+      "n_stable_fixed": 7,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 17,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 17,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 30,
+          "stable": 7,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 7
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 182.5,
+      "runtime_s": 216.6,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 16",
+      "override": {
+        "body_ratio": 1.1510550483078965,
+        "zeta": 0.12599800250076978,
+        "g": 12.278893577683018,
+        "mu": 11.818905196948943,
+        "W0": 0.4269231626893494,
+        "c_D": 0.13399601913487186,
+        "c_L": 3.0090245302264993,
+        "sigma": 7.978878092931763,
+        "x_r": 0.37970500484579306,
+        "l_w": 1.562442579388934,
+        "delta0": 1.362561169841747
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 62,
+      "n_orbits": 395,
+      "n_stable": 64,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 52,
+        "relaxed": 12
+      },
+      "n_torus_unstable": 144,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.01,
+        1.1300000000000006
+      ],
+      "stable_x_range": [
+        0.6388432863328548,
+        1.3746670751642518
+      ],
+      "tested": 104,
+      "n_fixed": 97,
+      "n_stable_fixed": 57,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 22,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 23,
+          "stable": 1,
+          "stable_aL_neg": 1,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 74,
+          "stable": 56,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 56
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 235.0,
+      "runtime_s": 270.5,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 17",
+      "override": {
+        "body_ratio": 1.2309540359128472,
+        "zeta": 0.1018722904745472,
+        "g": 16.42492641043099,
+        "mu": 7.372354848862336,
+        "W0": 0.3043012814160698,
+        "c_D": 0.1280344225471741,
+        "c_L": 2.510991911616998,
+        "sigma": 8.078126588375046,
+        "x_r": 0.32444207781418843,
+        "l_w": 1.378287033853906,
+        "delta0": 1.2011954397950977
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 40,
+      "n_orbits": 164,
+      "n_stable": 59,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 43,
+        "relaxed": 16
+      },
+      "n_torus_unstable": 48,
+      "stable_eps_range": [
+        0.25,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.01,
+        1.1949999999999998
+      ],
+      "stable_x_range": [
+        0.3072765837842336,
+        0.9861879732401401
+      ],
+      "tested": 99,
+      "n_fixed": 73,
+      "n_stable_fixed": 36,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 23,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 23,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 50,
+          "stable": 36,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 36
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 2,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 177.0,
+      "runtime_s": 249.8,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 18",
+      "override": {
+        "body_ratio": 1.3810307765894871,
+        "zeta": 0.17791304333872093,
+        "g": 18.451351357002906,
+        "mu": 9.75920244924012,
+        "W0": 0.38931669695016047,
+        "c_D": 0.2170921089578736,
+        "c_L": 2.8132865201465007,
+        "sigma": 8.42585588081371,
+        "x_r": 0.3944330844436127,
+        "l_w": 1.7485104113376702,
+        "delta0": 1.2827650933644787
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 32,
+      "n_orbits": 173,
+      "n_stable": 31,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 30,
+        "relaxed": 1
+      },
+      "n_torus_unstable": 55,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.01,
+        1.1175000000000002
+      ],
+      "stable_x_range": [
+        0.6214885928426565,
+        0.951414828884291
+      ],
+      "tested": 71,
+      "n_fixed": 69,
+      "n_stable_fixed": 29,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 22,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 22,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 47,
+          "stable": 29,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 29
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 170.1,
+      "runtime_s": 204.3,
+      "group": "LHS"
+    },
+    {
+      "name": "LHS 19",
+      "override": {
+        "body_ratio": 1.1947845942438948,
+        "zeta": 0.21161521690547974,
+        "g": 21.235120394471906,
+        "mu": 8.675663894543549,
+        "W0": 0.3799712065574137,
+        "c_D": 0.11184895189696525,
+        "c_L": 2.6499741464293285,
+        "sigma": 7.751388969405148,
+        "x_r": 0.3491446305244072,
+        "l_w": 1.7043772466395137,
+        "delta0": 1.3348469059403805
+      },
+      "state_layout": [
+        "x",
+        "u",
+        "th",
+        "om",
+        "zr",
+        "zi"
+      ],
+      "n_seeds": 74,
+      "n_orbits": 270,
+      "n_stable": 73,
+      "holding": true,
+      "stable_by_seed": {
+        "prescribed": 55,
+        "relaxed": 18
+      },
+      "n_torus_unstable": 75,
+      "stable_eps_range": [
+        0.25,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.01,
+        1.1875
+      ],
+      "stable_x_range": [
+        0.5069419540166447,
+        1.6224125340621471
+      ],
+      "tested": 113,
+      "n_fixed": 109,
+      "n_stable_fixed": 69,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative_n": 20,
+      "index_negative_stable": 0,
+      "by_fixed_type": {
+        "node": {
+          "n": 23,
+          "stable": 2,
+          "stable_aL_neg": 2,
+          "stable_aL_pos": 0
+        },
+        "saddle-real": {
+          "n": 86,
+          "stable": 67,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 67
+        },
+        "unstable-complex": {
+          "n": 0,
+          "stable": 0,
+          "stable_aL_neg": 0,
+          "stable_aL_pos": 0
+        }
+      },
+      "no_fixed_lock": 0,
+      "homotopy_folds": 0,
+      "runtime_grid_s": 270.9,
+      "runtime_s": 314.2,
+      "group": "LHS"
+    }
+  ],
+  "violation_rows": []
+}

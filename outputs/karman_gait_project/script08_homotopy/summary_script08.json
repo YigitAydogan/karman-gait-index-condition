@@ -1,0 +1,188 @@
+{
+  "mode": "FULL",
+  "datasets": [
+    "05b",
+    "06_ALL",
+    "06_BODY"
+  ],
+  "runtime_s": 1036.9,
+  "n_kept": 1481,
+  "n_fixed": 1333,
+  "n_stable_fixed": 465,
+  "violations": 0,
+  "violations_nonmarginal": 0,
+  "index_negative_n": 486,
+  "index_negative_stable": 0,
+  "by_fixed_type": {
+    "node": {
+      "n": 543,
+      "stable": 62,
+      "stable_aL_neg": 62,
+      "stable_aL_pos": 0
+    },
+    "saddle-real": {
+      "n": 781,
+      "stable": 403,
+      "stable_aL_neg": 0,
+      "stable_aL_pos": 403
+    },
+    "unstable-complex": {
+      "n": 9,
+      "stable": 0,
+      "stable_aL_neg": 0,
+      "stable_aL_pos": 0
+    }
+  },
+  "phase_rule_compared": 1128,
+  "phase_rule_agreement": 0.9973404255319149,
+  "no_fixed_lock": {
+    "n": 10,
+    "stable": 8,
+    "tongue_distance_median": 0.003,
+    "tongue_distance_max_found": 0.006,
+    "beyond_probe": 6
+  },
+  "homotopy_folds": {
+    "n": 2,
+    "stable": 1,
+    "fail_eta_counts": {
+      "0.7": 1,
+      "0.5": 1,
+      "0.35": 0,
+      "0.25": 0,
+      "0.18": 0,
+      "0.12": 0,
+      "0.08": 0,
+      "0.05": 0,
+      "0.03": 0,
+      "0.02": 0,
+      "0.01": 0
+    }
+  },
+  "violation_rows": [],
+  "disagreement_rows": [
+    {
+      "ours": {
+        "eps": 2.25,
+        "ratio": 1.0619999999999998,
+        "dphi": 1.5707963267948966,
+        "x": 0.7806708523575777,
+        "x_L": 0.7891333243792207,
+        "kept": true,
+        "stable": true,
+        "rate": -0.03597770796481773,
+        "status": "fixed",
+        "fail_eta": null,
+        "fixed_type": "saddle-real",
+        "det_I_minus_Mint": -0.014927665574952243,
+        "k": -0.01395727702176756,
+        "aL": 0.5213238294502555,
+        "aL_r2": 0.9862878325513177,
+        "index": 1.0,
+        "tongue_dist": null,
+        "dataset": "05b",
+        "variant": "baseline"
+      },
+      "script07": {
+        "eps": 2.25,
+        "ratio": 1.0619999999999998,
+        "dphi": 1.5707963267948966,
+        "x": 0.7806708523575777,
+        "kept": true,
+        "stable": true,
+        "rate": -0.03597770796481773,
+        "fixed_type": "node",
+        "det_I_minus_Mint": 0.004735751607215019,
+        "k": 0.004533369838429712,
+        "phase_dist": 0.21180060508641918,
+        "aL": NaN,
+        "aL_r2": NaN,
+        "index": NaN,
+        "dataset": "05b",
+        "variant": "baseline"
+      }
+    },
+    {
+      "ours": {
+        "eps": 4.5,
+        "ratio": 1.126,
+        "dphi": 1.5707963267948966,
+        "x": 0.7656526555029493,
+        "x_L": 0.7748884736746473,
+        "kept": true,
+        "stable": true,
+        "rate": -0.038908315387870734,
+        "status": "fixed",
+        "fail_eta": null,
+        "fixed_type": "saddle-real",
+        "det_I_minus_Mint": -0.03627801281509735,
+        "k": -0.03200072896184413,
+        "aL": 0.4607801109287525,
+        "aL_r2": 0.989763196123848,
+        "index": 1.0,
+        "tongue_dist": null,
+        "dataset": "05b",
+        "variant": "baseline"
+      },
+      "script07": {
+        "eps": 4.5,
+        "ratio": 1.126,
+        "dphi": 1.5707963267948966,
+        "x": 0.7656526555029493,
+        "kept": true,
+        "stable": true,
+        "rate": -0.038908315387870734,
+        "fixed_type": "node",
+        "det_I_minus_Mint": 0.012506088613746622,
+        "k": 0.01141200576849689,
+        "phase_dist": 0.22829026712028022,
+        "aL": NaN,
+        "aL_r2": NaN,
+        "index": NaN,
+        "dataset": "05b",
+        "variant": "baseline"
+      }
+    },
+    {
+      "ours": {
+        "eps": 4.75,
+        "ratio": 1.1375000000000008,
+        "dphi": 1.5707963267948966,
+        "x": 0.7710066057756695,
+        "x_L": 0.7791200699602954,
+        "kept": true,
+        "stable": true,
+        "rate": -0.02927491642573349,
+        "status": "fixed",
+        "fail_eta": null,
+        "fixed_type": "saddle-real",
+        "det_I_minus_Mint": -0.043935468720078204,
+        "k": -0.036617513516248534,
+        "aL": 0.501112863957957,
+        "aL_r2": 0.990682442759301,
+        "index": 1.0,
+        "tongue_dist": null,
+        "dataset": "06_ALL",
+        "variant": "mu x 2"
+      },
+      "script07": {
+        "eps": 4.75,
+        "ratio": 1.1375000000000008,
+        "dphi": 1.5707963267948966,
+        "x": 0.7710066057756695,
+        "kept": true,
+        "stable": true,
+        "rate": -0.02927491642573349,
+        "fixed_type": "node",
+        "det_I_minus_Mint": 0.022332645470181715,
+        "k": 0.01939311394573963,
+        "phase_dist": 0.29134832132693494,
+        "aL": NaN,
+        "aL_r2": NaN,
+        "index": NaN,
+        "dataset": "06_ALL",
+        "variant": "mu x 2"
+      }
+    }
+  ]
+}

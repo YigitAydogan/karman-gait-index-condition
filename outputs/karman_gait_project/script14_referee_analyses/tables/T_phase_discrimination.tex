@@ -1,0 +1,13 @@
+\begin{table}
+\caption{Discrimination of node and saddle branches by tail-beat phase at phase lag pi/2. Deterministic intervals from a bootstrap over coupling rows and accuracy from leave-one-row-out classification; noisy intervals from a bootstrap over sampled points and accuracy of single bouts with the deterministic threshold.}
+\label{tab:T_phase_discrimination}
+\begin{ruledtabular}
+\begin{tabular}{lcccccccc}
+condition & node n & saddle n & mean difference (rad) & 95% CI & AUC & 95% CI & overlap & balanced accuracy \\
+\hline
+deterministic & 530 & 888 & 0.508 & 0.465 to 0.545 & 0.998 & 0.996 to 0.999 & 0.132 & 0.953 \\
+noise D=0.003 & 1280 & 1280 & 0.847 & 0.687 to 1.030 & 0.911 & 0.869 to 0.948 & 0.321 & 0.823 \\
+noise D=0.01 & 1280 & 1280 & 0.886 & 0.720 to 1.036 & 0.782 & 0.738 to 0.830 & 0.554 & 0.723 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}

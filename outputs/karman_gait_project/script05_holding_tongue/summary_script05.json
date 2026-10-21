@@ -1,0 +1,96 @@
+{
+  "mode": "FULL",
+  "runtime_s": 152.0,
+  "g": 16.0,
+  "spp": 100,
+  "eps_rows": [
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0,
+    14.0,
+    15.0,
+    16.0,
+    17.0,
+    18.0,
+    19.0,
+    20.0
+  ],
+  "ratio_range": [
+    0.9,
+    1.35
+  ],
+  "n_orbits": 116,
+  "n_stable": 3,
+  "type_counts": {
+    "stable": 3,
+    "fold": 60,
+    "flip": 0,
+    "torus": 53
+  },
+  "theory_classes": {
+    "node (k>0)": {
+      "n": 55,
+      "stable": 0
+    },
+    "saddle (k<0)": {
+      "n": 61,
+      "stable": 3
+    },
+    "no fixed lock": {
+      "n": 0,
+      "stable": 0
+    }
+  },
+  "theory_by_dphi": {
+    "0.00": {
+      "node (k>0)": {
+        "n": 36,
+        "stable": 0
+      },
+      "saddle (k<0)": {
+        "n": 46,
+        "stable": 3
+      },
+      "no fixed lock": {
+        "n": 0,
+        "stable": 0
+      }
+    },
+    "3.14": {
+      "node (k>0)": {
+        "n": 19,
+        "stable": 0
+      },
+      "saddle (k<0)": {
+        "n": 15,
+        "stable": 0
+      },
+      "no fixed lock": {
+        "n": 0,
+        "stable": 0
+      }
+    }
+  },
+  "loss_neighbour_types": {
+    "fold": 0,
+    "flip": 0,
+    "torus": 0
+  },
+  "stable_ratio_range_by_eps": {
+    "1.0": [
+      1.02,
+      1.0350000000000001
+    ]
+  },
+  "post_border": []
+}

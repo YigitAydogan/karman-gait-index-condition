@@ -1,0 +1,4 @@
+phase lag,branch,median, 100 steps,median, 200 steps,relative change,phase mean change (rad)
+0.000,saddle,24,24,0.5%,-0.011
+1.571,saddle,25,26,2.4%,0.040
+1.571,node,31,32,1.0%,0.005

@@ -1,0 +1,117 @@
+{
+  "mode": "FULL",
+  "runtime_s": 498.9,
+  "spp": 100,
+  "eps_list": [
+    2.0,
+    4.0,
+    6.0,
+    10.0,
+    15.0,
+    20.0
+  ],
+  "g_prescribed": [
+    8.0,
+    16.0,
+    32.0
+  ],
+  "n_pairs": 1138,
+  "n_equilibria": 300,
+  "floquet_converged": 284,
+  "tests": {
+    "lock_n": 192,
+    "lock_frac_aL_positive": 0.9166666666666666,
+    "lock_frac_floquet_stable": 0.010416666666666666,
+    "lock_frac_stable_when_aL_positive": 0.0,
+    "prediction_stability_agreement": 0.9929577464788732,
+    "pred_vs_floquet_rate_spearman": 0.947105433418813,
+    "pred_vs_floquet_rate_median_abs_err": 0.007469780541262721,
+    "lock_rate_vs_k_spearman": -0.24080123266563944,
+    "lock_by_g": {
+      "8.0": {
+        "n": 117,
+        "frac_aP_negative": 0.0,
+        "frac_stable": 0.0
+      },
+      "16.0": {
+        "n": 75,
+        "frac_aP_negative": 0.26666666666666666,
+        "frac_stable": 0.02666666666666667
+      }
+    },
+    "lock_with_well_n": 20,
+    "lock_with_well_frac_stable": 0.1,
+    "lock_with_well_rate_vs_k_spearman": 0.8493292053663571,
+    "lock_with_well_median_rate": 0.161280442083367,
+    "lock_by_dphi": {
+      "0.00": {
+        "n": 40,
+        "frac_in_well": 0.0,
+        "frac_stable": 0.0
+      },
+      "1.57": {
+        "n": 13,
+        "frac_in_well": 0.3076923076923077,
+        "frac_stable": 0.15384615384615385
+      },
+      "3.14": {
+        "n": 15,
+        "frac_in_well": 0.8666666666666667,
+        "frac_stable": 0.0
+      },
+      "4.71": {
+        "n": 7,
+        "frac_in_well": 0.42857142857142855,
+        "frac_stable": 0.0
+      }
+    },
+    "lock_well_capable_n": 192,
+    "lock_well_capable_frac": 1.0,
+    "lock_in_well_given_capable": 0.10416666666666667,
+    "lock_median_phase_distance_to_well": 2.0943951023931953,
+    "presc_n": 92,
+    "presc_hopf_negative_gamma": 9,
+    "presc_frac_stable": 0.18478260869565216,
+    "presc_frac_stable_by_g": {
+      "8.0": 0.05555555555555555,
+      "16.0": 0.21428571428571427,
+      "32.0": 0.21739130434782608
+    },
+    "presc_frac_aP_negative": 0.2826086956521739,
+    "c1_n": 0,
+    "c1_frac_floquet_stable": NaN,
+    "sim_fates": {
+      "hold": 25,
+      "collide": 2,
+      "escape": 257
+    },
+    "sim_hold_frac_lock": 0.010416666666666666,
+    "sim_hold_frac_presc": 0.25,
+    "tloss_vs_1_over_rate_spearman": 0.5790835814091628
+  },
+  "aL_range_lock": [
+    -12.732430672264407,
+    13.40920566942617
+  ],
+  "aP_range_presc": [
+    -0.2833720905256249,
+    0.6169545884292236
+  ],
+  "gamma_range": [
+    -0.13625287192916938,
+    0.2892604077242081
+  ],
+  "gamma_drag_only_range": [
+    0.024850321697698914,
+    0.23657968270542923
+  ],
+  "k_range": [
+    -0.02475320156439407,
+    0.5968590114318842
+  ],
+  "flo_types": {
+    "stable": 19,
+    "saddle": 256,
+    "oscillatory": 9
+  }
+}

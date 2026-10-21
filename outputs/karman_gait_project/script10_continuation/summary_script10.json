@@ -1,0 +1,200 @@
+{
+  "mode": "FULL",
+  "device": [
+    "gpu"
+  ],
+  "runtime_this_session_s": 122.8,
+  "eps_rows": [
+    0.125,
+    6.0,
+    0.125
+  ],
+  "dphi": [
+    0.0,
+    1.5707963267948966,
+    3.141592653589793,
+    4.71238898038469
+  ],
+  "grid": {
+    "orbits": 3789,
+    "stable": 266
+  },
+  "continuation": {
+    "half_branches": 282,
+    "points": 25083,
+    "stable_grid_orbits_not_on_branch": 0,
+    "stable_points": 3846,
+    "end_reasons": {
+      "closed-loop": 282
+    }
+  },
+  "bifurcations": {
+    "loss-torus": 97,
+    "fold": 148,
+    "loss-fold": 60
+  },
+  "stable_segment_ends": {
+    "n": 522,
+    "bifurcation": 522,
+    "by_type": {
+      "torus": 224,
+      "domain: closed-loop": 120,
+      "fold": 178
+    }
+  },
+  "stable_area_by_delay": {
+    "0.000": {
+      "any": 0.0521875,
+      "node": 0.0,
+      "saddle-real": 0.0521875,
+      "none": 0.0,
+      "node_only": 0.0,
+      "saddle_only": 0.0521875,
+      "none_only": 0.0,
+      "node_and_none": 0.0,
+      "node_and_saddle": 0.0,
+      "saddle_and_none": 0.0,
+      "unclassified_fraction": 0.0
+    },
+    "1.571": {
+      "any": 0.05375,
+      "node": 0.0240625,
+      "saddle-real": 0.0465625,
+      "none": 0.0221875,
+      "node_only": 0.0003125,
+      "saddle_only": 0.028125,
+      "none_only": 0.0,
+      "node_and_none": 0.020625,
+      "node_and_saddle": 0.016875,
+      "saddle_and_none": 0.0153125,
+      "unclassified_fraction": 0.0
+    },
+    "3.142": {
+      "any": 0.0,
+      "node": 0.0,
+      "saddle-real": 0.0,
+      "none": 0.0,
+      "node_only": 0.0,
+      "saddle_only": 0.0,
+      "none_only": 0.0,
+      "node_and_none": 0.0,
+      "node_and_saddle": 0.0,
+      "saddle_and_none": 0.0,
+      "unclassified_fraction": null
+    },
+    "4.712": {
+      "any": 0.0,
+      "node": 0.0,
+      "saddle-real": 0.0,
+      "none": 0.0,
+      "node_only": 0.0,
+      "saddle_only": 0.0,
+      "none_only": 0.0,
+      "node_and_none": 0.0,
+      "node_and_saddle": 0.0,
+      "saddle_and_none": 0.0,
+      "unclassified_fraction": null
+    }
+  },
+  "classified": {
+    "n": 2372,
+    "node": 530,
+    "saddle_real": 1685,
+    "unstable_complex": 0,
+    "none": 157,
+    "evaluated": 2119,
+    "violations": 0,
+    "violations_nonmarginal": 0,
+    "violations_after_2x_steps_check": 0,
+    "aL_offset_used": {
+      "0.005": 2016,
+      "0.0015": 103,
+      "0.02": 0
+    },
+    "fixed_lock_but_no_aL": 96,
+    "homotopy_failed": 118,
+    "node_aL_neg": 484,
+    "saddle_aL_pos": 1635
+  },
+  "no_lock": {
+    "n": 157,
+    "on_branch_with_fixed_lock": 157
+  },
+  "gate_G1_05b": {
+    "n": 76,
+    "inside": 76,
+    "fraction": 1.0
+  },
+  "coarse_stage_D": {
+    "evaluated": 1772,
+    "violations": 3
+  },
+  "suspects_rechecked": [
+    {
+      "eps": 0.25,
+      "dphi": 1.5707963267948966,
+      "ratio": 1.0067943374379396,
+      "x": 0.7595513794676282,
+      "amax": 0.9962233824049203,
+      "steps_to_stability_change": 10,
+      "fixed_type": "saddle-real",
+      "det_I_minus_Mint": -0.0019859949928150303,
+      "aL_used": 0.5011388652673875,
+      "aL_half_0.005": 0.5011388652673875,
+      "aL_half_0.0015": 0.49821458207661146,
+      "aL_half_0.02": -0.6771096917367664,
+      "index": 1.0,
+      "check_2x_steps": {
+        "amax": 0.9962225002832656,
+        "fixed_type": "saddle-real",
+        "det_I_minus_Mint": -0.001986908592787566,
+        "aL": 0.5009845385382895,
+        "still_violation": false
+      }
+    },
+    {
+      "eps": 0.375,
+      "dphi": 1.5707963267948966,
+      "ratio": 1.010172713211077,
+      "x": 0.7693018881133425,
+      "amax": 0.9945336599771173,
+      "steps_to_stability_change": 8,
+      "fixed_type": "saddle-real",
+      "det_I_minus_Mint": -0.0027249301904922383,
+      "aL_used": 0.53506422772116,
+      "aL_half_0.005": 0.53506422772116,
+      "aL_half_0.0015": 0.5304035519382395,
+      "aL_half_0.02": -0.5770785952442686,
+      "index": 1.0,
+      "check_2x_steps": {
+        "amax": 0.9945327760754259,
+        "fixed_type": "saddle-real",
+        "det_I_minus_Mint": -0.002725895166139577,
+        "aL": 0.5349306059368366,
+        "still_violation": false
+      }
+    },
+    {
+      "eps": 0.5,
+      "dphi": 1.5707963267948966,
+      "ratio": 1.0134704298050956,
+      "x": 0.7952859437279405,
+      "amax": 0.9934773261636527,
+      "steps_to_stability_change": 8,
+      "fixed_type": "saddle-real",
+      "det_I_minus_Mint": -0.002669380640206054,
+      "aL_used": 0.6876586750127244,
+      "aL_half_0.005": 0.6876586750127244,
+      "aL_half_0.0015": 0.6634329906120857,
+      "aL_half_0.02": -0.7241868145742816,
+      "index": 1.0,
+      "check_2x_steps": {
+        "amax": 0.993476456034191,
+        "fixed_type": "saddle-real",
+        "det_I_minus_Mint": -0.002670477375953568,
+        "aL": 0.6873972791820232,
+        "still_violation": false
+      }
+    }
+  ]
+}

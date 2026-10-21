@@ -1,0 +1,4 @@
+condition,node n,saddle n,mean difference (rad),95% CI,AUC,95% CI,overlap,balanced accuracy
+deterministic,530,888,0.508,0.465 to 0.545,0.998,0.996 to 0.999,0.132,0.953
+noise D=0.003,1280,1280,0.847,0.687 to 1.030,0.911,0.869 to 0.948,0.321,0.823
+noise D=0.01,1280,1280,0.886,0.720 to 1.036,0.782,0.738 to 0.830,0.554,0.723

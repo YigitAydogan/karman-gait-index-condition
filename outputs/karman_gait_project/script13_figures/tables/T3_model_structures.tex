@@ -1,0 +1,27 @@
+\begin{table}
+\caption{Robustness to model structure (Script 09): stable station-holding orbits found, of which tested on the saddle and node branches, index violations, and the ranges where stable holding occurs.}
+\label{tab:T3_model_structures}
+\begin{ruledtabular}
+\begin{tabular}{lrrrrrrrr}
+variant & states & stable orbits & tested saddle & tested node & violations & eps & omega\_c/omega\_w & x/lambda \\
+\hline
+baseline & 6 & 27 & 22 & 1 & 0 & 0.75 to 4.75 & 1.020 to 1.133 & 0.54 to 1.10 \\
+linear lift + lever arm & 6 & 163 & 103 & 0 & 0 & 0.75 to 4.75 & 1.010 to 1.120 & 0.25 to 1.47 \\
+added reactive thrust & 6 & 73 & 72 & 0 & 0 & 0.75 to 4.75 & 1.020 to 1.128 & 1.24 to 1.70 \\
+reactive thrust only & 6 & 0 & 0 & 0 & 0 & n/a & n/a & n/a \\
+lift lag & 7 & 39 & 11 & 0 & 0 & 0.75 to 4.75 & 1.015 to 1.113 & 0.53 to 1.12 \\
+lift lag + added mass & 7 & 10 & 4 & 0 & 0 & 0.75 to 2.25 & 1.015 to 1.045 & 0.53 to 1.07 \\
+pitch + free heave & 8 & 27 & 22 & 0 & 0 & 0.75 to 4.25 & 1.020 to 1.120 & 0.52 to 1.03 \\
+pitch + resonant heave & 8 & 0 & 0 & 0 & 0 & n/a & n/a & n/a \\
+pitch + stiff heave & 8 & 22 & 17 & 1 & 0 & 0.75 to 4.25 & 1.020 to 1.123 & 0.53 to 1.05 \\
+two-mode body & 8 & 36 & 31 & 3 & 0 & 0.75 to 4.75 & 1.015 to 1.145 & 0.53 to 1.16 \\
+van der Pol CPG & 6 & 1 & 1 & 0 & 0 & 0.75 to 0.75 & 1.100 to 1.100 & 0.55 to 0.55 \\
+lateral line + proprio & 6 & 7 & 6 & 0 & 0 & 0.25 to 1.25 & 1.010 to 1.065 & 0.54 to 0.96 \\
+lateral line only & 6 & 9 & 9 & 0 & 0 & 0.25 to 3.25 & 0.977 to 1.057 & 0.56 to 1.17 \\
+plateau deficit & 6 & 10 & 3 & 3 & 0 & 0.75 to 4.25 & 1.020 to 1.115 & 0.79 to 0.97 \\
+algebraic decay & 6 & 74 & 74 & 0 & 0 & 0.75 to 4.75 & 1.020 to 1.175 & 1.21 to 2.51 \\
+bump envelope & 6 & 7 & 7 & 0 & 0 & 0.75 to 3.75 & 1.020 to 1.100 & 0.69 to 0.88 \\
+joint LHS (20 samples, 20 with holding) & 6 & 705 & 412 & 119 & 0 & - & - & - \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}

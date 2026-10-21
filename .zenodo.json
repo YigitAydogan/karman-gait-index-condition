@@ -1,0 +1,12 @@
+{
+  "title": "Entrainment versus station keeping: an index condition for Kármán gaiting (code and outputs)",
+  "upload_type": "software",
+  "description": "Code and saved outputs for the manuscript 'Entrainment versus station keeping: an index condition for Kármán gaiting' by Y. Aydoğan and O. Akanyeti. The scripts compute passive equilibria, entrainment at fixed position, station-holding orbits with their Floquet multipliers and fixed-position branches, numerical continuation and bifurcations, noise and experimental predictions, and every figure and table of the paper.",
+  "creators": [
+    {"name": "Aydoğan, Yiğit", "affiliation": "Department of Computer Science, Aberystwyth University"},
+    {"name": "Akanyeti, Otar", "affiliation": "Department of Computer Science, Aberystwyth University"}
+  ],
+  "license": "MIT",
+  "keywords": ["entrainment", "Floquet theory", "fixed-point index", "central pattern generator", "Kármán gait", "fish locomotion"],
+  "access_right": "open"
+}

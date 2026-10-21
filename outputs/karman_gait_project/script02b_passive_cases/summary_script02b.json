@@ -1,0 +1,116 @@
+{
+  "mode": "FULL",
+  "runtime_s": 101.0,
+  "Q1_auc_ranked": [
+    [
+      "x_star / x_peak",
+      0.1329994921480817
+    ],
+    [
+      "x_star",
+      0.18229410562000806
+    ],
+    [
+      "delta0",
+      0.1942187324807577
+    ],
+    [
+      "x_peak",
+      0.7252207836748692
+    ],
+    [
+      "x_r",
+      0.693798270665286
+    ],
+    [
+      "c_D",
+      0.33399837751205325
+    ],
+    [
+      "U_loc(x*)/U_inf",
+      0.38533923848594176
+    ],
+    [
+      "c_L",
+      0.5822588198049057
+    ],
+    [
+      "W0",
+      0.5801878392549746
+    ],
+    [
+      "l_w",
+      0.5773616763070591
+    ],
+    [
+      "l_delta",
+      0.5700637782863626
+    ],
+    [
+      "sigma",
+      0.5561687519374221
+    ],
+    [
+      "U_inf",
+      0.4990815794854207
+    ]
+  ],
+  "Q1_stable_frac_by_body": {
+    "rigid": 0.06639839034205232,
+    "soft": 0.107421875,
+    "resonant": 0.07495069033530571,
+    "resonant-damped": 0.058823529411764705,
+    "stiff": 0.06072874493927125,
+    "very stiff": 0.06639839034205232
+  },
+  "Q1_stable_frac_by_shape": {
+    "exponential": 0.06873111782477341,
+    "plateau": 0.0631768953068592,
+    "algebraic": 0.10516252390057361,
+    "bump": 0.06176961602671119
+  },
+  "Q2_confusion_rows_avg_cols_floquet": [
+    [
+      185,
+      6,
+      9,
+      18
+    ],
+    [
+      1,
+      293,
+      1,
+      5
+    ],
+    [
+      12,
+      0,
+      18,
+      5
+    ]
+  ],
+  "Q2_avg_stable_confirmed": 185,
+  "Q2_avg_stable_refuted": 15,
+  "Q2_avg_saddle_actually_stable": 1,
+  "Q2_marginal": 19,
+  "Q3_floquet_stable_n": 197,
+  "Q3_holding_for_kick_at_least": {
+    "0.01": 185,
+    "0.05": 168,
+    "0.1": 122,
+    "0.2": 77
+  },
+  "Q4_oscillatory": {
+    "n": 27,
+    "bounded_surging_small_kick": 2,
+    "collide_small_kick": 22,
+    "escape_small_kick": 3,
+    "median_surge_amp": 0.05644639268202169
+  },
+  "Q5": {
+    "n_floquet_stable_downstream": 0,
+    "x_minus_peak": [],
+    "growth": []
+  },
+  "corrected_stable_fraction_LHS": 0.06871888888888888
+}

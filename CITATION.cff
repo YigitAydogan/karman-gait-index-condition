@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this code or these outputs, please cite them as below."
+title: "Entrainment versus station keeping: an index condition for Kármán gaiting (code and outputs)"
+type: software
+authors:
+  - family-names: "Aydoğan"
+    given-names: "Yiğit"
+    affiliation: "Department of Computer Science, Aberystwyth University"
+    email: "yia@aber.ac.uk"
+  - family-names: "Akanyeti"
+    given-names: "Otar"
+    affiliation: "Department of Computer Science, Aberystwyth University"
+repository-code: "https://github.com/YigitAydogan/karman-gait-index-condition"
+license: MIT
+version: "1.0.0"
+date-released: "2026-10-21"
+keywords:
+  - entrainment
+  - Floquet theory
+  - fixed-point index
+  - central pattern generator
+  - Kármán gait
+  - fish locomotion

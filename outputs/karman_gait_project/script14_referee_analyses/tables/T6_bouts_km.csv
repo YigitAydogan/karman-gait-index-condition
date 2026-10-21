@@ -1,0 +1,22 @@
+phase lag,branch,noise,runs,censored,KM median,95% CI
+0.000,saddle,joint D=0.003,1280,0.00,42,33 to 58
+0.000,saddle,joint D=0.01,1280,0.00,26,23 to 28
+0.000,saddle,joint D=0.03,1280,0.00,19,17 to 20
+0.000,saddle,joint D=0.1,1280,0.00,14,13 to 15
+0.000,saddle,wake phase only D=0.01,1280,0.00,33,29 to 40
+0.000,saddle,wake amplitude only D=0.01,1280,0.10,62,41 to 129
+0.000,saddle,CPG phase only D=0.01,1280,0.00,36,31 to 46
+1.571,saddle,joint D=0.003,1280,0.00,68,48 to 89
+1.571,saddle,joint D=0.01,1280,0.00,26,23 to 29
+1.571,saddle,joint D=0.03,1280,0.00,17,16 to 17
+1.571,saddle,joint D=0.1,1280,0.00,12,10 to 13
+1.571,saddle,wake phase only D=0.01,1280,0.00,50,42 to 59
+1.571,saddle,wake amplitude only D=0.01,1280,0.51,>2000,429 to 1883
+1.571,saddle,CPG phase only D=0.01,1280,0.00,39,32 to 46
+1.571,node,joint D=0.003,1280,0.00,78,71 to 85
+1.571,node,joint D=0.01,1280,0.00,32,30 to 33
+1.571,node,joint D=0.03,1280,0.00,20,19 to 21
+1.571,node,joint D=0.1,1280,0.00,15,14 to 15
+1.571,node,wake phase only D=0.01,1280,0.00,54,49 to 58
+1.571,node,wake amplitude only D=0.01,1280,0.13,334,215 to 542
+1.571,node,CPG phase only D=0.01,1280,0.00,52,49 to 56

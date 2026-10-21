@@ -1,0 +1,1734 @@
+{
+  "mode": "FULL",
+  "device": [
+    "gpu"
+  ],
+  "A_areas_exclusive": {
+    "0.000": {
+      "saddle_only": 0.0521875,
+      "node_only": 0.0,
+      "nolock_only": 0.0,
+      "node_saddle": 0.0,
+      "node_nolock": 0.0,
+      "saddle_nolock": 0.0,
+      "all_three": 0.0,
+      "unstable_complex_only": 0.0,
+      "unclassified": 0.0,
+      "total": 0.0521875,
+      "sum_of_exclusive": 0.0521875,
+      "matches_script10": true
+    },
+    "1.571": {
+      "saddle_only": 0.028125,
+      "node_only": 0.0003125,
+      "nolock_only": 0.0,
+      "node_saddle": 0.003125,
+      "node_nolock": 0.006875,
+      "saddle_nolock": 0.0015625,
+      "all_three": 0.01375,
+      "unstable_complex_only": 0.0,
+      "unclassified": 0.0,
+      "total": 0.05375,
+      "sum_of_exclusive": 0.05375,
+      "matches_script10": true
+    },
+    "3.142": {
+      "saddle_only": 0.0,
+      "node_only": 0.0,
+      "nolock_only": 0.0,
+      "node_saddle": 0.0,
+      "node_nolock": 0.0,
+      "saddle_nolock": 0.0,
+      "all_three": 0.0,
+      "unstable_complex_only": 0.0,
+      "unclassified": 0.0,
+      "total": 0.0,
+      "sum_of_exclusive": 0.0,
+      "matches_script10": true
+    },
+    "4.712": {
+      "saddle_only": 0.0,
+      "node_only": 0.0,
+      "nolock_only": 0.0,
+      "node_saddle": 0.0,
+      "node_nolock": 0.0,
+      "saddle_nolock": 0.0,
+      "all_three": 0.0,
+      "unstable_complex_only": 0.0,
+      "unclassified": 0.0,
+      "total": 0.0,
+      "sum_of_exclusive": 0.0,
+      "matches_script10": true
+    }
+  },
+  "gate_GA": true,
+  "B_accounting": {
+    "parameter_sets_08": {
+      "stable_found": 571,
+      "stable_tested": 571,
+      "not_reconverged": 25,
+      "homotopy_fold": 1,
+      "unlocked_limit": 8,
+      "node": 76,
+      "saddle": 461,
+      "unstable_complex": 0,
+      "fixed_but_no_aL": 72,
+      "classified": 465,
+      "violations": 0,
+      "distinct_settings": 218
+    },
+    "parameter_sets_08_by_variant": {
+      "05b/baseline": {
+        "stable_found": null,
+        "stable_tested": 76,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 6,
+        "saddle": 70,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 8,
+        "classified": 68,
+        "violations": 0,
+        "distinct_settings": 26
+      },
+      "06_ALL/baseline": {
+        "stable_found": null,
+        "stable_tested": 26,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 3,
+        "saddle": 23,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 4,
+        "classified": 22,
+        "violations": 0,
+        "distinct_settings": 11
+      },
+      "06_ALL/c = 1": {
+        "stable_found": null,
+        "stable_tested": 9,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 9,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 9,
+        "violations": 0,
+        "distinct_settings": 3
+      },
+      "06_ALL/mu x 0.5": {
+        "stable_found": null,
+        "stable_tested": 24,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 1,
+        "node": 1,
+        "saddle": 22,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 1,
+        "classified": 22,
+        "violations": 0,
+        "distinct_settings": 12
+      },
+      "06_ALL/mu x 2": {
+        "stable_found": null,
+        "stable_tested": 28,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 1,
+        "node": 2,
+        "saddle": 25,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 4,
+        "classified": 23,
+        "violations": 0,
+        "distinct_settings": 12
+      },
+      "06_ALL/g = 12": {
+        "stable_found": null,
+        "stable_tested": 14,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 1,
+        "saddle": 13,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 1,
+        "classified": 13,
+        "violations": 0,
+        "distinct_settings": 10
+      },
+      "06_ALL/g = 24": {
+        "stable_found": null,
+        "stable_tested": 52,
+        "not_reconverged": 7,
+        "homotopy_fold": 0,
+        "unlocked_limit": 2,
+        "node": 3,
+        "saddle": 40,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 20,
+        "classified": 23,
+        "violations": 0,
+        "distinct_settings": 13
+      },
+      "06_ALL/body ratio 0.8": {
+        "stable_found": null,
+        "stable_tested": 0,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 0,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 0,
+        "violations": 0,
+        "distinct_settings": 0
+      },
+      "06_ALL/body ratio 1.6": {
+        "stable_found": null,
+        "stable_tested": 2,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 2,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 2,
+        "violations": 0,
+        "distinct_settings": 2
+      },
+      "06_ALL/zeta 0.1": {
+        "stable_found": null,
+        "stable_tested": 58,
+        "not_reconverged": 3,
+        "homotopy_fold": 0,
+        "unlocked_limit": 1,
+        "node": 0,
+        "saddle": 54,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 14,
+        "classified": 40,
+        "violations": 0,
+        "distinct_settings": 15
+      },
+      "06_ALL/zeta 0.4": {
+        "stable_found": null,
+        "stable_tested": 6,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 6,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 6,
+        "violations": 0,
+        "distinct_settings": 3
+      },
+      "06_ALL/W0 0.25": {
+        "stable_found": null,
+        "stable_tested": 15,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 1,
+        "saddle": 14,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 4,
+        "classified": 11,
+        "violations": 0,
+        "distinct_settings": 6
+      },
+      "06_ALL/W0 0.45": {
+        "stable_found": null,
+        "stable_tested": 25,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 25,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 25,
+        "violations": 0,
+        "distinct_settings": 9
+      },
+      "06_ALL/c_D 0.10": {
+        "stable_found": null,
+        "stable_tested": 29,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 1,
+        "node": 3,
+        "saddle": 25,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 1,
+        "classified": 27,
+        "violations": 0,
+        "distinct_settings": 10
+      },
+      "06_ALL/c_D 0.25": {
+        "stable_found": null,
+        "stable_tested": 12,
+        "not_reconverged": 0,
+        "homotopy_fold": 1,
+        "unlocked_limit": 1,
+        "node": 1,
+        "saddle": 9,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 2,
+        "classified": 8,
+        "violations": 0,
+        "distinct_settings": 5
+      },
+      "06_BODY/body 0.9, zeta 0.2": {
+        "stable_found": null,
+        "stable_tested": 0,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 0,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 0,
+        "violations": 0,
+        "distinct_settings": 0
+      },
+      "06_BODY/body 1.0, zeta 0.2": {
+        "stable_found": null,
+        "stable_tested": 5,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 5,
+        "saddle": 0,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 2,
+        "classified": 3,
+        "violations": 0,
+        "distinct_settings": 2
+      },
+      "06_BODY/body 1.1, zeta 0.1": {
+        "stable_found": null,
+        "stable_tested": 62,
+        "not_reconverged": 15,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 46,
+        "saddle": 1,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 1,
+        "classified": 46,
+        "violations": 0,
+        "distinct_settings": 17
+      },
+      "06_BODY/body 1.1, zeta 0.2": {
+        "stable_found": null,
+        "stable_tested": 19,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 19,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 19,
+        "violations": 0,
+        "distinct_settings": 5
+      },
+      "06_BODY/body 1.3, zeta 0.1": {
+        "stable_found": null,
+        "stable_tested": 42,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 2,
+        "saddle": 40,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 6,
+        "classified": 36,
+        "violations": 0,
+        "distinct_settings": 16
+      },
+      "06_BODY/body 1.3, zeta 0.2": {
+        "stable_found": null,
+        "stable_tested": 24,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 1,
+        "node": 0,
+        "saddle": 23,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 1,
+        "classified": 22,
+        "violations": 0,
+        "distinct_settings": 13
+      },
+      "06_BODY/body 1.4, zeta 0.1": {
+        "stable_found": null,
+        "stable_tested": 18,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 18,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 18,
+        "violations": 0,
+        "distinct_settings": 11
+      },
+      "06_BODY/body 1.4, zeta 0.2": {
+        "stable_found": null,
+        "stable_tested": 18,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 2,
+        "saddle": 16,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 3,
+        "classified": 15,
+        "violations": 0,
+        "distinct_settings": 10
+      },
+      "06_BODY/body 1.5, zeta 0.1": {
+        "stable_found": null,
+        "stable_tested": 5,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 5,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 5,
+        "violations": 0,
+        "distinct_settings": 5
+      },
+      "06_BODY/body 1.5, zeta 0.2": {
+        "stable_found": null,
+        "stable_tested": 2,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 2,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 2,
+        "violations": 0,
+        "distinct_settings": 2
+      }
+    },
+    "model_structures_09": {
+      "stable_found": 1210,
+      "stable_tested": 1167,
+      "not_reconverged": 0,
+      "homotopy_fold": 0,
+      "unlocked_limit": 21,
+      "node": 218,
+      "saddle": 928,
+      "unstable_complex": 0,
+      "fixed_but_no_aL": 225,
+      "classified": 921,
+      "violations": 0,
+      "distinct_settings": 314
+    },
+    "model_structures_09_by_variant": {
+      "baseline": {
+        "group": "STRUCT",
+        "stable_found": 27,
+        "stable_tested": 27,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 1,
+        "saddle": 26,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 4,
+        "classified": 23,
+        "violations": 0,
+        "distinct_settings": 10
+      },
+      "linear lift + lever arm": {
+        "group": "STRUCT",
+        "stable_found": 163,
+        "stable_tested": 120,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 120,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 17,
+        "classified": 103,
+        "violations": 0,
+        "distinct_settings": 17
+      },
+      "added reactive thrust": {
+        "group": "STRUCT",
+        "stable_found": 73,
+        "stable_tested": 73,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 73,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 1,
+        "classified": 72,
+        "violations": 0,
+        "distinct_settings": 17
+      },
+      "reactive thrust only": {
+        "group": "STRUCT",
+        "stable_found": 0,
+        "stable_tested": 0,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 0,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 0,
+        "violations": 0,
+        "distinct_settings": 0
+      },
+      "lift lag": {
+        "group": "STRUCT",
+        "stable_found": 39,
+        "stable_tested": 39,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 11,
+        "saddle": 28,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 28,
+        "classified": 11,
+        "violations": 0,
+        "distinct_settings": 5
+      },
+      "lift lag + added mass": {
+        "group": "STRUCT",
+        "stable_found": 10,
+        "stable_tested": 10,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 1,
+        "saddle": 9,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 6,
+        "classified": 4,
+        "violations": 0,
+        "distinct_settings": 2
+      },
+      "pitch + free heave": {
+        "group": "STRUCT",
+        "stable_found": 27,
+        "stable_tested": 27,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 1,
+        "node": 3,
+        "saddle": 23,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 4,
+        "classified": 22,
+        "violations": 0,
+        "distinct_settings": 12
+      },
+      "pitch + resonant heave": {
+        "group": "STRUCT",
+        "stable_found": 0,
+        "stable_tested": 0,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 0,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 0,
+        "violations": 0,
+        "distinct_settings": 0
+      },
+      "pitch + stiff heave": {
+        "group": "STRUCT",
+        "stable_found": 22,
+        "stable_tested": 22,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 1,
+        "node": 1,
+        "saddle": 20,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 3,
+        "classified": 18,
+        "violations": 0,
+        "distinct_settings": 7
+      },
+      "two-mode body": {
+        "group": "STRUCT",
+        "stable_found": 36,
+        "stable_tested": 36,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 2,
+        "node": 3,
+        "saddle": 31,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 34,
+        "violations": 0,
+        "distinct_settings": 14
+      },
+      "van der Pol CPG": {
+        "group": "STRUCT",
+        "stable_found": 1,
+        "stable_tested": 1,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 1,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 1,
+        "violations": 0,
+        "distinct_settings": 1
+      },
+      "lateral line + proprio": {
+        "group": "STRUCT",
+        "stable_found": 7,
+        "stable_tested": 7,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 7,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 1,
+        "classified": 6,
+        "violations": 0,
+        "distinct_settings": 4
+      },
+      "lateral line only": {
+        "group": "STRUCT",
+        "stable_found": 9,
+        "stable_tested": 9,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 9,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 9,
+        "violations": 0,
+        "distinct_settings": 8
+      },
+      "plateau deficit": {
+        "group": "WAKE",
+        "stable_found": 10,
+        "stable_tested": 10,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 2,
+        "node": 5,
+        "saddle": 3,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 2,
+        "classified": 6,
+        "violations": 0,
+        "distinct_settings": 5
+      },
+      "algebraic decay": {
+        "group": "WAKE",
+        "stable_found": 74,
+        "stable_tested": 74,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 74,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 74,
+        "violations": 0,
+        "distinct_settings": 17
+      },
+      "bump envelope": {
+        "group": "WAKE",
+        "stable_found": 7,
+        "stable_tested": 7,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 7,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 7,
+        "violations": 0,
+        "distinct_settings": 6
+      },
+      "LHS 00": {
+        "group": "LHS",
+        "stable_found": 15,
+        "stable_tested": 15,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 1,
+        "node": 3,
+        "saddle": 11,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 5,
+        "classified": 9,
+        "violations": 0,
+        "distinct_settings": 5
+      },
+      "LHS 01": {
+        "group": "LHS",
+        "stable_found": 56,
+        "stable_tested": 56,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 56,
+        "saddle": 0,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 1,
+        "classified": 55,
+        "violations": 0,
+        "distinct_settings": 9
+      },
+      "LHS 02": {
+        "group": "LHS",
+        "stable_found": 8,
+        "stable_tested": 8,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 3,
+        "saddle": 5,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 4,
+        "classified": 4,
+        "violations": 0,
+        "distinct_settings": 3
+      },
+      "LHS 03": {
+        "group": "LHS",
+        "stable_found": 10,
+        "stable_tested": 10,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 10,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 2,
+        "classified": 8,
+        "violations": 0,
+        "distinct_settings": 4
+      },
+      "LHS 04": {
+        "group": "LHS",
+        "stable_found": 52,
+        "stable_tested": 52,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 1,
+        "node": 3,
+        "saddle": 48,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 7,
+        "classified": 44,
+        "violations": 0,
+        "distinct_settings": 13
+      },
+      "LHS 05": {
+        "group": "LHS",
+        "stable_found": 45,
+        "stable_tested": 45,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 44,
+        "saddle": 1,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 3,
+        "classified": 42,
+        "violations": 0,
+        "distinct_settings": 10
+      },
+      "LHS 06": {
+        "group": "LHS",
+        "stable_found": 31,
+        "stable_tested": 31,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 1,
+        "node": 2,
+        "saddle": 28,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 4,
+        "classified": 26,
+        "violations": 0,
+        "distinct_settings": 16
+      },
+      "LHS 07": {
+        "group": "LHS",
+        "stable_found": 66,
+        "stable_tested": 66,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 2,
+        "node": 30,
+        "saddle": 34,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 43,
+        "classified": 21,
+        "violations": 0,
+        "distinct_settings": 10
+      },
+      "LHS 08": {
+        "group": "LHS",
+        "stable_found": 3,
+        "stable_tested": 3,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 2,
+        "saddle": 1,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 1,
+        "classified": 2,
+        "violations": 0,
+        "distinct_settings": 2
+      },
+      "LHS 09": {
+        "group": "LHS",
+        "stable_found": 9,
+        "stable_tested": 9,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 9,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 1,
+        "classified": 8,
+        "violations": 0,
+        "distinct_settings": 4
+      },
+      "LHS 10": {
+        "group": "LHS",
+        "stable_found": 77,
+        "stable_tested": 77,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 2,
+        "node": 2,
+        "saddle": 73,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 1,
+        "classified": 74,
+        "violations": 0,
+        "distinct_settings": 18
+      },
+      "LHS 11": {
+        "group": "LHS",
+        "stable_found": 2,
+        "stable_tested": 2,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 2,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 0,
+        "classified": 2,
+        "violations": 0,
+        "distinct_settings": 2
+      },
+      "LHS 12": {
+        "group": "LHS",
+        "stable_found": 54,
+        "stable_tested": 54,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 6,
+        "node": 28,
+        "saddle": 20,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 34,
+        "classified": 14,
+        "violations": 0,
+        "distinct_settings": 8
+      },
+      "LHS 13": {
+        "group": "LHS",
+        "stable_found": 25,
+        "stable_tested": 25,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 5,
+        "saddle": 20,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 6,
+        "classified": 19,
+        "violations": 0,
+        "distinct_settings": 12
+      },
+      "LHS 14": {
+        "group": "LHS",
+        "stable_found": 14,
+        "stable_tested": 14,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 1,
+        "saddle": 13,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 9,
+        "classified": 5,
+        "violations": 0,
+        "distinct_settings": 4
+      },
+      "LHS 15": {
+        "group": "LHS",
+        "stable_found": 11,
+        "stable_tested": 11,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 1,
+        "saddle": 10,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 4,
+        "classified": 7,
+        "violations": 0,
+        "distinct_settings": 5
+      },
+      "LHS 16": {
+        "group": "LHS",
+        "stable_found": 64,
+        "stable_tested": 64,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 4,
+        "saddle": 60,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 7,
+        "classified": 57,
+        "violations": 0,
+        "distinct_settings": 14
+      },
+      "LHS 17": {
+        "group": "LHS",
+        "stable_found": 59,
+        "stable_tested": 59,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 2,
+        "node": 6,
+        "saddle": 51,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 21,
+        "classified": 36,
+        "violations": 0,
+        "distinct_settings": 14
+      },
+      "LHS 18": {
+        "group": "LHS",
+        "stable_found": 31,
+        "stable_tested": 31,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 0,
+        "saddle": 31,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 2,
+        "classified": 29,
+        "violations": 0,
+        "distinct_settings": 18
+      },
+      "LHS 19": {
+        "group": "LHS",
+        "stable_found": 73,
+        "stable_tested": 73,
+        "not_reconverged": 0,
+        "homotopy_fold": 0,
+        "unlocked_limit": 0,
+        "node": 3,
+        "saddle": 70,
+        "unstable_complex": 0,
+        "fixed_but_no_aL": 4,
+        "classified": 69,
+        "violations": 0,
+        "distinct_settings": 18
+      }
+    },
+    "model_structures_09_capped": 43,
+    "continued_families_10": {
+      "stable_points": 3846,
+      "distinct_stable_points": 2372,
+      "homotopy_fold": 118,
+      "unlocked_limit": 39,
+      "node": 530,
+      "saddle": 1685,
+      "unstable_complex": 0,
+      "fixed_but_no_aL": 96,
+      "classified": 2119,
+      "violations": 0,
+      "distinct_settings": 68,
+      "distinct_branches": 277
+    },
+    "recomputation_12_08": {
+      "stable_records": 465,
+      "refound": 455,
+      "not_refound": 10,
+      "classified": 455,
+      "violations": 0,
+      "type_changed": 0
+    },
+    "recomputation_12_09": {
+      "stable_records": 921,
+      "refound": 913,
+      "not_refound": 8,
+      "classified": 913,
+      "violations": 0,
+      "type_changed": 0
+    }
+  },
+  "E_passive": {
+    "downstream": {
+      "stable": 15,
+      "n": 2051,
+      "wilson_upper_95": 0.012032136750919832
+    },
+    "upstream": {
+      "stable": 201,
+      "n": 949
+    },
+    "fig2c_slope": {
+      "n": 1194,
+      "slope": 0.960087077969053,
+      "r2": 0.9023289428283737,
+      "ci95": [
+        0.9162123917619728,
+        1.0054854071411274
+      ],
+      "growth_time_range": [
+        1.4315843182600398,
+        4.62761470782951
+      ]
+    }
+  },
+  "F_bouts": {
+    "0.000/saddle-real/joint D=0.003": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 42.419999999999995,
+      "km_median_ci95": [
+        33.1,
+        57.66
+      ]
+    },
+    "0.000/saddle-real/joint D=0.01": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 25.55,
+      "km_median_ci95": [
+        23.0,
+        27.790000000000003
+      ]
+    },
+    "0.000/saddle-real/joint D=0.03": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 18.64,
+      "km_median_ci95": [
+        17.41,
+        19.650000000000002
+      ]
+    },
+    "0.000/saddle-real/joint D=0.1": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 13.879999999999999,
+      "km_median_ci95": [
+        12.79975,
+        14.629999999999999
+      ]
+    },
+    "0.000/saddle-real/wake phase only D=0.01": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 33.46,
+      "km_median_ci95": [
+        28.810000000000002,
+        40.3
+      ]
+    },
+    "0.000/saddle-real/wake amplitude only D=0.01": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.10078125,
+      "km_median": 62.12,
+      "km_median_ci95": [
+        41.277750000000005,
+        129.21099999999998
+      ]
+    },
+    "0.000/saddle-real/CPG phase only D=0.01": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 36.03,
+      "km_median_ci95": [
+        31.039250000000003,
+        45.860749999999996
+      ]
+    },
+    "0.000/saddle-real/exponent": {
+      "exponent": -0.3157727832859156,
+      "ci95": [
+        -0.3704650125949537,
+        -0.2684976087171051
+      ]
+    },
+    "1.571/saddle-real/joint D=0.003": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 68.0,
+      "km_median_ci95": [
+        47.97,
+        89.30175
+      ]
+    },
+    "1.571/saddle-real/joint D=0.01": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 25.71,
+      "km_median_ci95": [
+        22.540000000000003,
+        28.590249999999997
+      ]
+    },
+    "1.571/saddle-real/joint D=0.03": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 16.6,
+      "km_median_ci95": [
+        15.62,
+        17.39
+      ]
+    },
+    "1.571/saddle-real/joint D=0.1": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 11.69,
+      "km_median_ci95": [
+        10.36,
+        13.23
+      ]
+    },
+    "1.571/saddle-real/wake phase only D=0.01": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 50.11,
+      "km_median_ci95": [
+        41.68,
+        59.36
+      ]
+    },
+    "1.571/saddle-real/wake amplitude only D=0.01": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.51484375,
+      "km_median": null,
+      "km_median_ci95": [
+        428.58375,
+        1882.57
+      ]
+    },
+    "1.571/saddle-real/CPG phase only D=0.01": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 38.55,
+      "km_median_ci95": [
+        31.520000000000003,
+        46.05
+      ]
+    },
+    "1.571/saddle-real/exponent": {
+      "exponent": -0.4928478364724748,
+      "ci95": [
+        -0.534872574479356,
+        -0.4277226380883668
+      ]
+    },
+    "1.571/node/joint D=0.003": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 77.83,
+      "km_median_ci95": [
+        71.03,
+        84.92299999999999
+      ]
+    },
+    "1.571/node/joint D=0.01": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 31.55,
+      "km_median_ci95": [
+        30.470000000000002,
+        33.07
+      ]
+    },
+    "1.571/node/joint D=0.03": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 19.84,
+      "km_median_ci95": [
+        19.23,
+        20.540000000000003
+      ]
+    },
+    "1.571/node/joint D=0.1": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 14.629999999999999,
+      "km_median_ci95": [
+        14.24975,
+        15.0
+      ]
+    },
+    "1.571/node/wake phase only D=0.01": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 54.14,
+      "km_median_ci95": [
+        49.489999999999995,
+        57.73
+      ]
+    },
+    "1.571/node/wake amplitude only D=0.01": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.134375,
+      "km_median": 333.52,
+      "km_median_ci95": [
+        215.2,
+        541.56
+      ]
+    },
+    "1.571/node/CPG phase only D=0.01": {
+      "runs": 1280,
+      "points": 20,
+      "censored_fraction": 0.0,
+      "km_median": 52.39,
+      "km_median_ci95": [
+        48.98,
+        55.75
+      ]
+    },
+    "1.571/node/exponent": {
+      "exponent": -0.4717997050988516,
+      "ci95": [
+        -0.4923694551371899,
+        -0.4516907991236143
+      ]
+    }
+  },
+  "D_phase": {
+    "deterministic": {
+      "n_node": 530,
+      "n_saddle": 888,
+      "mean_node": 1.7145992923104971,
+      "mean_saddle": 1.2067580219352896,
+      "diff": 0.5078412703752075,
+      "auc": 0.9975522692503824,
+      "overlap": 0.1320754716981132,
+      "centre": 1.4606786571228934,
+      "sign": 1.0,
+      "coupling_rows": 47,
+      "loro_accuracy": 0.9414668547249647,
+      "loro_balanced_accuracy": 0.9528854326024138,
+      "diff_ci95_rows": [
+        0.4652536812869418,
+        0.5445634367903394
+      ],
+      "auc_ci95_rows": [
+        0.9961889768349383,
+        0.9987637614026874
+      ]
+    },
+    "noise_D=0.003": {
+      "n_node": 1280,
+      "n_saddle": 1280,
+      "mean_node": 1.9401414981099319,
+      "mean_saddle": 1.0934096935602018,
+      "diff": 0.8467318045497301,
+      "auc": 0.91052001953125,
+      "overlap": 0.32109375,
+      "centre": 1.4606786571228934,
+      "sign": 1.0,
+      "single_bout_balanced_accuracy": 0.8226562500000001,
+      "diff_ci95_points": [
+        0.6865405879798439,
+        1.0296581555593178
+      ],
+      "auc_ci95_points": [
+        0.8685872624906382,
+        0.9477602012322077
+      ]
+    },
+    "noise_D=0.01": {
+      "n_node": 1280,
+      "n_saddle": 1280,
+      "mean_node": 1.8279948093137681,
+      "mean_saddle": 0.9424203893041645,
+      "diff": 0.8855744200096036,
+      "auc": 0.7822076416015625,
+      "overlap": 0.55390625,
+      "centre": 1.4606786571228934,
+      "sign": 1.0,
+      "single_bout_balanced_accuracy": 0.723046875,
+      "diff_ci95_points": [
+        0.7198896830801145,
+        1.03574144712575
+      ],
+      "auc_ci95_points": [
+        0.7375092016280788,
+        0.8298436644583037
+      ]
+    }
+  },
+  "C_hypotheses": {
+    "points": 2372,
+    "type_agreement_with_script10": 1.0,
+    "homotopy_reached": 2254,
+    "homotopy_fold": 118,
+    "hyperbolicity_margin_quantiles_min_1_5_50": [
+      0.00011297906371732225,
+      0.0008728818096757607,
+      0.0026052980620338674,
+      0.019349141931249925
+    ],
+    "distance_to_plus1_quantiles": [
+      0.00011297906371732225,
+      0.0008728818096757607,
+      0.0026052980620338674,
+      0.019349141931249925
+    ],
+    "abs_aL_quantiles": [
+      0.005063310999962131,
+      0.029212618428887185,
+      0.07988996392520618,
+      0.4034019963001052
+    ],
+    "abs_det_quantiles": [
+      0.0001161160743706331,
+      0.0009646923480308421,
+      0.0026736373232189754,
+      0.020608334750611666
+    ],
+    "below_1e2_hyperbolicity": 593,
+    "below_aL_margin": 10,
+    "low_margin_rechecked": 60,
+    "branch_changes": {
+      "200": [],
+      "400": []
+    },
+    "gate_GC": true
+  },
+  "I_phase_lag_sweep": {
+    "0.0000": {
+      "dphi": 0.0,
+      "n_orbits": 512,
+      "n_stable": 38,
+      "stable_cells": 38,
+      "stable_area": 0.04749999999999899,
+      "classified": 38,
+      "node": 0,
+      "saddle": 38,
+      "unlocked": 0,
+      "fold": 0,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "x_range": [
+        0.5388722153488145,
+        1.1018210332001022
+      ]
+    },
+    "0.3927": {
+      "dphi": 0.39269908169872414,
+      "n_orbits": 559,
+      "n_stable": 37,
+      "stable_cells": 37,
+      "stable_area": 0.046249999999999014,
+      "classified": 37,
+      "node": 0,
+      "saddle": 37,
+      "unlocked": 0,
+      "fold": 0,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "x_range": [
+        0.5341816755506592,
+        1.1391852892709708
+      ]
+    },
+    "0.7854": {
+      "dphi": 0.7853981633974483,
+      "n_orbits": 501,
+      "n_stable": 50,
+      "stable_cells": 50,
+      "stable_area": 0.06249999999999867,
+      "classified": 49,
+      "node": 0,
+      "saddle": 50,
+      "unlocked": 0,
+      "fold": 0,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "x_range": [
+        0.5469711822527119,
+        1.1293191254511943
+      ]
+    },
+    "1.1781": {
+      "dphi": 1.1780972450961724,
+      "n_orbits": 430,
+      "n_stable": 66,
+      "stable_cells": 66,
+      "stable_area": 0.08249999999999824,
+      "classified": 58,
+      "node": 17,
+      "saddle": 48,
+      "unlocked": 1,
+      "fold": 0,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "x_range": [
+        0.6024646279433946,
+        1.1226629879513925
+      ]
+    },
+    "1.5708": {
+      "dphi": 1.5707963267948966,
+      "n_orbits": 345,
+      "n_stable": 33,
+      "stable_cells": 33,
+      "stable_area": 0.04124999999999912,
+      "classified": 31,
+      "node": 6,
+      "saddle": 26,
+      "unlocked": 1,
+      "fold": 0,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "x_range": [
+        0.5673515434037543,
+        1.001629506907669
+      ]
+    },
+    "1.9635": {
+      "dphi": 1.9634954084936207,
+      "n_orbits": 314,
+      "n_stable": 7,
+      "stable_cells": 7,
+      "stable_area": 0.008749999999999813,
+      "classified": 6,
+      "node": 0,
+      "saddle": 6,
+      "unlocked": 0,
+      "fold": 1,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "x_range": [
+        0.5305665074948919,
+        0.6593790113921796
+      ]
+    },
+    "2.3562": {
+      "dphi": 2.356194490192345,
+      "n_orbits": 348,
+      "n_stable": 0,
+      "stable_cells": 0,
+      "stable_area": 0.0
+    },
+    "2.7489": {
+      "dphi": 2.748893571891069,
+      "n_orbits": 301,
+      "n_stable": 0,
+      "stable_cells": 0,
+      "stable_area": 0.0
+    },
+    "3.1416": {
+      "dphi": 3.141592653589793,
+      "n_orbits": 92,
+      "n_stable": 0,
+      "stable_cells": 0,
+      "stable_area": 0.0
+    },
+    "3.5343": {
+      "dphi": 3.5342917352885173,
+      "n_orbits": 38,
+      "n_stable": 0,
+      "stable_cells": 0,
+      "stable_area": 0.0
+    },
+    "3.9270": {
+      "dphi": 3.9269908169872414,
+      "n_orbits": 28,
+      "n_stable": 0,
+      "stable_cells": 0,
+      "stable_area": 0.0
+    },
+    "4.3197": {
+      "dphi": 4.319689898685965,
+      "n_orbits": 22,
+      "n_stable": 0,
+      "stable_cells": 0,
+      "stable_area": 0.0
+    },
+    "4.7124": {
+      "dphi": 4.71238898038469,
+      "n_orbits": 23,
+      "n_stable": 0,
+      "stable_cells": 0,
+      "stable_area": 0.0
+    },
+    "5.1051": {
+      "dphi": 5.105088062083414,
+      "n_orbits": 55,
+      "n_stable": 8,
+      "stable_cells": 8,
+      "stable_area": 0.009999999999999787,
+      "classified": 8,
+      "node": 0,
+      "saddle": 8,
+      "unlocked": 0,
+      "fold": 0,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "x_range": [
+        0.7664818582176003,
+        1.099668593942303
+      ]
+    },
+    "5.4978": {
+      "dphi": 5.497787143782138,
+      "n_orbits": 275,
+      "n_stable": 52,
+      "stable_cells": 52,
+      "stable_area": 0.06499999999999861,
+      "classified": 50,
+      "node": 3,
+      "saddle": 49,
+      "unlocked": 0,
+      "fold": 0,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "x_range": [
+        0.530508737451198,
+        1.1352071424095347
+      ]
+    },
+    "5.8905": {
+      "dphi": 5.890486225480862,
+      "n_orbits": 384,
+      "n_stable": 43,
+      "stable_cells": 43,
+      "stable_area": 0.053749999999998854,
+      "classified": 43,
+      "node": 0,
+      "saddle": 43,
+      "unlocked": 0,
+      "fold": 0,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "x_range": [
+        0.5248568204509994,
+        1.115421666373965
+      ]
+    }
+  },
+  "gate_GI": true,
+  "G_confinement": {
+    "0.000/saddle-real/D=0.0": {
+      "runs": 640,
+      "residence_km_median": null,
+      "confined_0.1_km_median": null,
+      "confined_0.25_km_median": null,
+      "rms_deviation_while_holding": 1.8216924424328255e-08,
+      "p95_deviation_while_holding": 2.7832420996369824e-08
+    },
+    "0.000/saddle-real/D=0.003": {
+      "runs": 640,
+      "residence_km_median": 58.72,
+      "confined_0.1_km_median": 11.0,
+      "confined_0.25_km_median": 34.0,
+      "rms_deviation_while_holding": 0.4123283967080445,
+      "p95_deviation_while_holding": 0.4426896554961188
+    },
+    "0.000/saddle-real/D=0.01": {
+      "runs": 640,
+      "residence_km_median": 27.720000000000002,
+      "confined_0.1_km_median": 7.0,
+      "confined_0.25_km_median": 14.0,
+      "rms_deviation_while_holding": 0.7029315109393334,
+      "p95_deviation_while_holding": 1.8235196028095944
+    },
+    "0.000/saddle-real/random_starts": {
+      "runs": 640,
+      "holding": 60,
+      "holding_span_below_0p05": 60,
+      "holding_near_station": 60,
+      "holding_span_median": 0.0014504194259643555
+    },
+    "1.571/saddle-real/D=0.0": {
+      "runs": 640,
+      "residence_km_median": null,
+      "confined_0.1_km_median": null,
+      "confined_0.25_km_median": null,
+      "rms_deviation_while_holding": 1.5182586085574218e-08,
+      "p95_deviation_while_holding": 2.7556079940123722e-08
+    },
+    "1.571/saddle-real/D=0.003": {
+      "runs": 640,
+      "residence_km_median": 61.71,
+      "confined_0.1_km_median": 10.0,
+      "confined_0.25_km_median": 30.0,
+      "rms_deviation_while_holding": 0.44036876242743334,
+      "p95_deviation_while_holding": 0.5390309717242057
+    },
+    "1.571/saddle-real/D=0.01": {
+      "runs": 640,
+      "residence_km_median": 25.41,
+      "confined_0.1_km_median": 6.0,
+      "confined_0.25_km_median": 13.0,
+      "rms_deviation_while_holding": 0.6856881947943113,
+      "p95_deviation_while_holding": 1.6497637981230489
+    },
+    "1.571/saddle-real/random_starts": {
+      "runs": 640,
+      "holding": 72,
+      "holding_span_below_0p05": 72,
+      "holding_near_station": 72,
+      "holding_span_median": 5.8710575103759766e-06
+    },
+    "1.571/node/D=0.0": {
+      "runs": 640,
+      "residence_km_median": null,
+      "confined_0.1_km_median": null,
+      "confined_0.25_km_median": null,
+      "rms_deviation_while_holding": 1.7864952938582058e-08,
+      "p95_deviation_while_holding": 2.6832590810480135e-08
+    },
+    "1.571/node/D=0.003": {
+      "runs": 640,
+      "residence_km_median": 70.71000000000001,
+      "confined_0.1_km_median": 10.0,
+      "confined_0.25_km_median": 41.0,
+      "rms_deviation_while_holding": 0.5688291357377852,
+      "p95_deviation_while_holding": 1.1526998908253845
+    },
+    "1.571/node/D=0.01": {
+      "runs": 640,
+      "residence_km_median": 31.040000000000003,
+      "confined_0.1_km_median": 6.0,
+      "confined_0.25_km_median": 14.0,
+      "rms_deviation_while_holding": 0.8289948887531841,
+      "p95_deviation_while_holding": 2.283888985184527
+    },
+    "1.571/node/random_starts": {
+      "runs": 640,
+      "holding": 69,
+      "holding_span_below_0p05": 69,
+      "holding_near_station": 69,
+      "holding_span_median": 2.676248550415039e-05
+    }
+  },
+  "gate_GH": true,
+  "H_timestep": {
+    "0.000/saddle-real": {
+      "100": {
+        "km_median": 23.71,
+        "censored": 0.0,
+        "phase_mean": 1.3102973982207553
+      },
+      "200": {
+        "km_median": 23.82,
+        "censored": 0.0,
+        "phase_mean": 1.2996059344291377
+      },
+      "relative_median_change": 0.004639392661324311,
+      "phase_mean_change": -0.01069146379161756
+    },
+    "1.571/saddle-real": {
+      "100": {
+        "km_median": 24.96,
+        "censored": 0.0,
+        "phase_mean": 0.9453595563163217
+      },
+      "200": {
+        "km_median": 25.55,
+        "censored": 0.0,
+        "phase_mean": 0.9856441828416308
+      },
+      "relative_median_change": 0.023637820512820505,
+      "phase_mean_change": 0.040284626525309064
+    },
+    "1.571/node": {
+      "100": {
+        "km_median": 31.23,
+        "censored": 0.0,
+        "phase_mean": 1.8417706074141695
+      },
+      "200": {
+        "km_median": 31.544999999999998,
+        "censored": 0.0,
+        "phase_mean": 1.8470494284140346
+      },
+      "relative_median_change": 0.010086455331412031,
+      "phase_mean_change": 0.005278820999865097
+    }
+  },
+  "runtime_this_session_s": 743.3
+}

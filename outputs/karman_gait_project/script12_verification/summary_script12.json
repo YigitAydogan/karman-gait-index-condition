@@ -1,0 +1,94 @@
+{
+  "mode": "FULL",
+  "device": [
+    "gpu"
+  ],
+  "runtime_this_session_s": 3061.4,
+  "convergence": {
+    "n": 500,
+    "groups": {
+      "0.000/saddle-real": 100,
+      "1.571/node": 100,
+      "1.571/none": 100,
+      "1.571/saddle-real": 100,
+      "near stability change": 100
+    },
+    "spp_levels": [
+      100,
+      200,
+      400
+    ],
+    "max_abs_mu_change_100_to_top": 0.00026098343207869856,
+    "median_abs_mu_change_100_to_top": 1.7279676156611856e-06,
+    "stability_flips": 0,
+    "stability_flips_nonmarginal": 0,
+    "detF_sign_flips": [
+      0,
+      500
+    ],
+    "detInt_sign_flips": [
+      0,
+      386
+    ],
+    "aL_sign_flips": [
+      0,
+      370
+    ],
+    "index_sign_flips": [
+      0,
+      370
+    ],
+    "branch_type_changes": 1,
+    "aL_narrow_vs_wide_sign_disagree": 0,
+    "ad_vs_fd_max": {
+      "1e-05": 7.012726500188471e-05,
+      "1e-06": 7.013616605822115e-06,
+      "1e-07": 7.115338197527521e-07
+    },
+    "ad_vs_fd_median": {
+      "1e-05": 7.978396380226016e-06,
+      "1e-06": 7.975825928596691e-07,
+      "1e-07": 8.108162001644492e-08
+    },
+    "newton_residual_median": {
+      "100": 8.881784197001252e-16,
+      "40 iterations": 8.881784197001252e-16
+    },
+    "newton_tolerance_mu_change_max": 2.914335439641036e-13,
+    "runtime_s": 410.0
+  },
+  "reevaluation": {
+    "08": {
+      "records": 1333,
+      "refound": 736,
+      "evaluated": 736,
+      "stable_evaluated": 455,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative": 66,
+      "index_negative_stable": 0,
+      "det_sign_agreement": 0.9945652173913043,
+      "aL_sign_agreement": 1.0,
+      "aL_sign_changed_rows": [],
+      "violation_rows": []
+    },
+    "09": {
+      "records": 2167,
+      "refound": 1218,
+      "evaluated": 1218,
+      "stable_evaluated": 913,
+      "violations": 0,
+      "violations_nonmarginal": 0,
+      "index_negative": 92,
+      "index_negative_stable": 0,
+      "det_sign_agreement": 0.9975369458128078,
+      "aL_sign_agreement": 1.0,
+      "aL_sign_changed_rows": [],
+      "violation_rows": []
+    }
+  },
+  "manifest": {
+    "folders": 17,
+    "files": 95
+  }
+}

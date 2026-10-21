@@ -1,0 +1,96 @@
+{
+  "mode": "FULL",
+  "datasets": [
+    "05b",
+    "06_ALL",
+    "06_BODY"
+  ],
+  "runtime_s": 848.2,
+  "n_checked": 3531,
+  "n_evaluable": 3234,
+  "n_stable_evaluable": 433,
+  "T1_stable_with_index_negative": 3,
+  "T1_nonmarginal": 3,
+  "T2_index_negative_n": 1561,
+  "T2_index_negative_but_stable": 3,
+  "by_fixed_type": {
+    "node": {
+      "n": 1639,
+      "stable": 72,
+      "stable_aL_neg": 69,
+      "stable_aL_pos": 3
+    },
+    "saddle-real": {
+      "n": 1583,
+      "stable": 361,
+      "stable_aL_neg": 0,
+      "stable_aL_pos": 361
+    },
+    "unstable-complex": {
+      "n": 12,
+      "stable": 0,
+      "stable_aL_neg": 0,
+      "stable_aL_pos": 0
+    }
+  },
+  "no_fixed_lock": {
+    "n": 178,
+    "stable": 80
+  },
+  "violations": [
+    {
+      "eps": 1.25,
+      "ratio": 1.045,
+      "dphi": 0.0,
+      "x": 0.5233405872514462,
+      "kept": true,
+      "stable": true,
+      "rate": -0.034908331937699905,
+      "fixed_type": "node",
+      "det_I_minus_Mint": 0.012901678878612084,
+      "k": 0.01381135266492478,
+      "phase_dist": 1.399448877501765,
+      "aL": 0.4814211337748172,
+      "aL_r2": 0.9992477572967475,
+      "index": -1.0,
+      "dataset": "06_ALL",
+      "variant": "mu x 0.5"
+    },
+    {
+      "eps": 1.25,
+      "ratio": 1.0250000000000001,
+      "dphi": 1.5707963267948966,
+      "x": 0.8267024148696388,
+      "kept": true,
+      "stable": true,
+      "rate": -0.05272093028658357,
+      "fixed_type": "node",
+      "det_I_minus_Mint": 0.023618287985146362,
+      "k": 0.01767524830777297,
+      "phase_dist": 1.2826042000852127,
+      "aL": 0.08887732337756336,
+      "aL_r2": 0.9973473171526541,
+      "index": -1.0,
+      "dataset": "06_BODY",
+      "variant": "body 1.4, zeta 0.2"
+    },
+    {
+      "eps": 1.25,
+      "ratio": 1.02,
+      "dphi": 1.5707963267948966,
+      "x": 0.9199799672944671,
+      "kept": true,
+      "stable": true,
+      "rate": -0.054954216489717336,
+      "fixed_type": "node",
+      "det_I_minus_Mint": 0.013789509810344117,
+      "k": 0.01046432900087476,
+      "phase_dist": 0.8732821937081274,
+      "aL": 0.1029016528707539,
+      "aL_r2": 0.997304229672221,
+      "index": -1.0,
+      "dataset": "06_BODY",
+      "variant": "body 1.5, zeta 0.2"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"res": {"name": "reactive thrust only", "override": {"tilt": 0.0, "c_T": 0.3}, "state_layout": ["x", "u", "th", "om", "zr", "zi"], "n_seeds": 0, "n_orbits": 0, "n_stable": 0, "holding": false, "runtime_s": 7.2, "note": "no prescribed equilibria", "group": "STRUCT"}, "recs": []}

@@ -1,0 +1,473 @@
+{
+  "mode": "FULL",
+  "variant_set": "ALL",
+  "eps_rows": [
+    0.25,
+    0.75,
+    1.25,
+    1.75,
+    2.25,
+    2.75,
+    3.25,
+    3.75,
+    4.25,
+    4.75
+  ],
+  "results": [
+    {
+      "name": "baseline",
+      "override": {},
+      "n_seeds": 44,
+      "n_orbits": 261,
+      "counts": {
+        "node": {
+          "n": 115,
+          "stable": 0
+        },
+        "saddle": {
+          "n": 141,
+          "stable": 21
+        },
+        "none": {
+          "n": 5,
+          "stable": 5
+        }
+      },
+      "fisher_p": 2.2996583035764845e-06,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.02,
+        1.1350000000000007
+      ],
+      "n_torus_unstable": 106,
+      "runtime_s": 116.1
+    },
+    {
+      "name": "c = 1",
+      "override": {
+        "c": 1.0
+      },
+      "n_seeds": 44,
+      "n_orbits": 126,
+      "counts": {
+        "node": {
+          "n": 86,
+          "stable": 0
+        },
+        "saddle": {
+          "n": 39,
+          "stable": 9
+        },
+        "none": {
+          "n": 1,
+          "stable": 0
+        }
+      },
+      "fisher_p": 1.3859479320752438e-05,
+      "stable_eps_range": [
+        0.75,
+        1.75
+      ],
+      "stable_ratio_range": [
+        1.045,
+        1.1
+      ],
+      "n_torus_unstable": 4,
+      "runtime_s": 104.7
+    },
+    {
+      "name": "mu x 0.5",
+      "override": {
+        "mu": 3.141592653589793
+      },
+      "n_seeds": 44,
+      "n_orbits": 210,
+      "counts": {
+        "node": {
+          "n": 76,
+          "stable": 0
+        },
+        "saddle": {
+          "n": 131,
+          "stable": 21
+        },
+        "none": {
+          "n": 3,
+          "stable": 3
+        }
+      },
+      "fisher_p": 5.208421350612113e-05,
+      "stable_eps_range": [
+        0.75,
+        4.25
+      ],
+      "stable_ratio_range": [
+        1.02,
+        1.1125000000000007
+      ],
+      "n_torus_unstable": 98,
+      "runtime_s": 112.4
+    },
+    {
+      "name": "mu x 2",
+      "override": {
+        "mu": 12.566370614359172
+      },
+      "n_seeds": 44,
+      "n_orbits": 288,
+      "counts": {
+        "node": {
+          "n": 141,
+          "stable": 1
+        },
+        "saddle": {
+          "n": 142,
+          "stable": 22
+        },
+        "none": {
+          "n": 5,
+          "stable": 5
+        }
+      },
+      "fisher_p": 2.553581874862552e-06,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.02,
+        1.1375000000000008
+      ],
+      "n_torus_unstable": 110,
+      "runtime_s": 116.0
+    },
+    {
+      "name": "g = 12",
+      "override": {
+        "g": 12.0
+      },
+      "n_seeds": 36,
+      "n_orbits": 261,
+      "counts": {
+        "node": {
+          "n": 119,
+          "stable": 0
+        },
+        "saddle": {
+          "n": 139,
+          "stable": 11
+        },
+        "none": {
+          "n": 3,
+          "stable": 3
+        }
+      },
+      "fisher_p": 0.0010729956824541355,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.01,
+        1.0875
+      ],
+      "n_torus_unstable": 108,
+      "runtime_s": 102.9
+    },
+    {
+      "name": "g = 24",
+      "override": {
+        "g": 24.0
+      },
+      "n_seeds": 58,
+      "n_orbits": 154,
+      "counts": {
+        "node": {
+          "n": 72,
+          "stable": 1
+        },
+        "saddle": {
+          "n": 68,
+          "stable": 46
+        },
+        "none": {
+          "n": 14,
+          "stable": 5
+        }
+      },
+      "fisher_p": 9.849893919815852e-19,
+      "stable_eps_range": [
+        0.25,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.01,
+        1.2449999999999997
+      ],
+      "n_torus_unstable": 28,
+      "runtime_s": 132.8
+    },
+    {
+      "name": "body ratio 0.8",
+      "override": {
+        "body_ratio": 0.8
+      },
+      "n_seeds": 54,
+      "n_orbits": 67,
+      "counts": {
+        "node": {
+          "n": 35,
+          "stable": 0
+        },
+        "saddle": {
+          "n": 28,
+          "stable": 0
+        },
+        "none": {
+          "n": 4,
+          "stable": 0
+        }
+      },
+      "fisher_p": 1.0,
+      "stable_eps_range": null,
+      "stable_ratio_range": null,
+      "n_torus_unstable": 0,
+      "runtime_s": 127.8
+    },
+    {
+      "name": "body ratio 1.6",
+      "override": {
+        "body_ratio": 1.6
+      },
+      "n_seeds": 24,
+      "n_orbits": 100,
+      "counts": {
+        "node": {
+          "n": 43,
+          "stable": 0
+        },
+        "saddle": {
+          "n": 57,
+          "stable": 2
+        },
+        "none": {
+          "n": 0,
+          "stable": 0
+        }
+      },
+      "fisher_p": 0.5048484848484849,
+      "stable_eps_range": [
+        0.75,
+        1.75
+      ],
+      "stable_ratio_range": [
+        1.01,
+        1.0150000000000001
+      ],
+      "n_torus_unstable": 41,
+      "runtime_s": 80.9
+    },
+    {
+      "name": "zeta 0.1",
+      "override": {
+        "zeta": 0.1
+      },
+      "n_seeds": 50,
+      "n_orbits": 165,
+      "counts": {
+        "node": {
+          "n": 63,
+          "stable": 0
+        },
+        "saddle": {
+          "n": 94,
+          "stable": 50
+        },
+        "none": {
+          "n": 8,
+          "stable": 8
+        }
+      },
+      "fisher_p": 4.73272679191781e-15,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.02,
+        1.1700000000000002
+      ],
+      "n_torus_unstable": 42,
+      "runtime_s": 120.1
+    },
+    {
+      "name": "zeta 0.4",
+      "override": {
+        "zeta": 0.4
+      },
+      "n_seeds": 32,
+      "n_orbits": 182,
+      "counts": {
+        "node": {
+          "n": 94,
+          "stable": 0
+        },
+        "saddle": {
+          "n": 88,
+          "stable": 6
+        },
+        "none": {
+          "n": 0,
+          "stable": 0
+        }
+      },
+      "fisher_p": 0.011668308757493506,
+      "stable_eps_range": [
+        1.25,
+        2.25
+      ],
+      "stable_ratio_range": [
+        1.025,
+        1.045
+      ],
+      "n_torus_unstable": 45,
+      "runtime_s": 92.5
+    },
+    {
+      "name": "W0 0.25",
+      "override": {
+        "W0": 0.25
+      },
+      "n_seeds": 36,
+      "n_orbits": 163,
+      "counts": {
+        "node": {
+          "n": 78,
+          "stable": 1
+        },
+        "saddle": {
+          "n": 82,
+          "stable": 11
+        },
+        "none": {
+          "n": 3,
+          "stable": 3
+        }
+      },
+      "fisher_p": 0.004821165479087395,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.02,
+        1.1475000000000009
+      ],
+      "n_torus_unstable": 61,
+      "runtime_s": 101.4
+    },
+    {
+      "name": "W0 0.45",
+      "override": {
+        "W0": 0.45
+      },
+      "n_seeds": 54,
+      "n_orbits": 296,
+      "counts": {
+        "node": {
+          "n": 134,
+          "stable": 0
+        },
+        "saddle": {
+          "n": 162,
+          "stable": 25
+        },
+        "none": {
+          "n": 0,
+          "stable": 0
+        }
+      },
+      "fisher_p": 1.3932849219184288e-07,
+      "stable_eps_range": [
+        0.75,
+        3.25
+      ],
+      "stable_ratio_range": [
+        1.0150000000000001,
+        1.0950000000000004
+      ],
+      "n_torus_unstable": 119,
+      "runtime_s": 118.4
+    },
+    {
+      "name": "c_D 0.10",
+      "override": {
+        "c_D": 0.1
+      },
+      "n_seeds": 56,
+      "n_orbits": 283,
+      "counts": {
+        "node": {
+          "n": 128,
+          "stable": 2
+        },
+        "saddle": {
+          "n": 152,
+          "stable": 24
+        },
+        "none": {
+          "n": 3,
+          "stable": 3
+        }
+      },
+      "fisher_p": 1.7986080780746838e-05,
+      "stable_eps_range": [
+        1.25,
+        4.25
+      ],
+      "stable_ratio_range": [
+        1.02,
+        1.1200000000000006
+      ],
+      "n_torus_unstable": 112,
+      "runtime_s": 129.8
+    },
+    {
+      "name": "c_D 0.25",
+      "override": {
+        "c_D": 0.25
+      },
+      "n_seeds": 28,
+      "n_orbits": 175,
+      "counts": {
+        "node": {
+          "n": 87,
+          "stable": 1
+        },
+        "saddle": {
+          "n": 85,
+          "stable": 9
+        },
+        "none": {
+          "n": 3,
+          "stable": 2
+        }
+      },
+      "fisher_p": 0.008978892313933565,
+      "stable_eps_range": [
+        0.75,
+        4.75
+      ],
+      "stable_ratio_range": [
+        1.02,
+        1.1350000000000007
+      ],
+      "n_torus_unstable": 62,
+      "runtime_s": 91.4
+    }
+  ],
+  "runtime_s": 1547.6
+}
