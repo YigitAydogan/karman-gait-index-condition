@@ -832,6 +832,125 @@ def fig7():
                         f"intrinsic frequencies fixed in physical time (trout scaling, U_ref = {Uref:.2f} body lengths per second). "
                         "Bout durations are in Table T6. P_hold: holding probability.")
 
+def quad_layout(pw=2.2, ph=1.8):
+    """Two rows of two panels, all the same size (inches)."""
+    gap, left, bottom, vgap, top = 1.05, 0.72, 0.55, 1.0, 0.38
+    W = W2; H = bottom + 2 * ph + vgap + top
+    fig = plt.figure(figsize=(W, H))
+    mk = lambda x, y: fig.add_axes([x / W, y / H, pw / W, ph / H])
+    y1 = bottom + ph + vgap
+    return fig, [mk(left, y1), mk(left + pw + gap, y1), mk(left, bottom), mk(left + pw + gap, bottom)]
+
+@item
+def fig8():
+    d17 = P("script17_biology_questions")
+    s17 = jload("script17_biology_questions", "summary_script17.json")
+    A1 = np.load(os.path.join(d17, CK, "A1_fate.npz"))
+    C2 = np.load(os.path.join(d17, CK, "C2_scan.npz"))
+    C4 = np.load(os.path.join(d17, CK, "C4_noise.npz"))
+    fig, ax = quad_layout()
+    xpk = s17["baseline_envelope_peak"]
+    # (a) passive fate map at zeta = 0.1
+    BA, bb = A1["bodies"], A1["bb"]
+    fate = np.where(A1["alive"], 0, np.where(A1["xend"] < 1.0, 1, 2))
+    bsel = [b for b in range(BA.shape[0]) if abs(BA[b, 1] - 0.1) < 1e-9 and BA[b, 2] < 0.5]
+    X0 = np.unique(A1["x0"]); OM = BA[bsel, 0]
+    M = np.array([fate[bb == b] for b in bsel])
+    ex = np.concatenate([X0 - np.diff(X0)[0] / 2, [X0[-1] + np.diff(X0)[0] / 2]])
+    lo_ = np.log(OM); dl = np.diff(lo_)[0]
+    ey = np.exp(np.concatenate([lo_ - dl / 2, [lo_[-1] + dl / 2]]))
+    cmap = ListedColormap(["#d9d9d9", "#4393c3", "#f4a582"])
+    ax[0].pcolormesh(ex, ey, M, cmap=cmap, vmin=-0.5, vmax=2.5, rasterized=True)
+    XF = np.round(np.linspace(0.16, 3.6, A1["F"].shape[1]), 6)
+    eqx, eqy = [], []
+    for b in bsel:
+        F = A1["F"][b]; sg = np.sign(F)
+        for j in np.where(sg[:-1] != sg[1:])[0]:
+            eqx.append(XF[j] - F[j] * (XF[j + 1] - XF[j]) / (F[j + 1] - F[j])); eqy.append(BA[b, 0])
+    ax[0].plot(eqx, eqy, "o", ms=2.5, color=C_INK)
+    ax[0].axvline(xpk, color=C_INK, lw=0.8, ls="--")
+    lin_axis(ax[0], "x", 0, 3, step=1)
+    ax[0].set_yscale("log"); ax[0].set_ylim(0.25, 4.0)
+    ax[0].yaxis.set_major_locator(FixedLocator([0.25, 0.5, 1, 2, 4]))
+    ax[0].yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:g}"))
+    ax[0].yaxis.set_minor_locator(NullLocator())
+    ax[0].set_xlabel(r"release position $x_0/\lambda$"); ax[0].set_ylabel(r"$\Omega/\omega_w$")
+    ax[0].legend(handles=[Patch(color="#4393c3", label="to cylinder"), Patch(color="#f4a582", label="out of wake"),
+                          plt.Line2D([], [], ls="", marker="o", ms=3, color=C_INK, label="balance point")],
+                 loc="upper right", fontsize=8, handlelength=1.0)
+    panel(ax[0], "(a)")
+    # (b) positions of stable holding and of stable passive equilibria relative to the envelope peak
+    R9 = jload("script09_model_structure", "records_script09_ALL.json")
+    lhs_ovr = {}
+    ckd = P("script09_model_structure", CK)
+    for fn in sorted(os.listdir(ckd)):
+        if "LHS" in fn:
+            c = json.load(open(os.path.join(ckd, fn))); lhs_ovr[c["res"]["name"]] = c["res"]["override"]
+    shp = {"plateau deficit": 1, "algebraic decay": 2, "bump envelope": 3}
+    xf_ = np.linspace(0, 4, 4001)
+    def peak(ov):
+        s_, W0_, xr, lw = ov.get("shape", 0), ov.get("W0", W0), ov.get("x_r", X_R), ov.get("l_w", L_W)
+        rise = 1 - np.exp(-(xf_ / xr) ** 2)
+        Wv = W0_ * rise / (1 + xf_ / lw) if s_ == 2 else (W0_ * np.exp(-((xf_ - xr) / (0.5 * lw)) ** 2) if s_ == 3
+                                                         else W0_ * rise * np.exp(-xf_ / lw))
+        return xf_[np.argmax(Wv)]
+    ra = []
+    for r_ in R9:
+        if r_.get("stable"):
+            ov = dict(shape=shp[r_["variant"]]) if r_["variant"] in shp else lhs_ovr.get(r_["variant"], {})
+            ra.append(r_["x"] / peak(ov))
+    ra = np.array(ra)
+    d2 = np.load(P("script02_passive_robustness", "results_script02.npz"))
+    rp = d2["lhs_eq_x"] / d2["lhs_xpeak"]
+    st = d2["lhs_cls"] == 0
+    d2b = np.load(P("script02b_passive_cases", "results_script02b.npz"))
+    chk, conv, cf = d2b["chk"].astype(int), d2b["conv"].astype(bool), d2b["cls_f"]
+    conf = np.zeros_like(st); conf[chk[conv]] = cf[conv] == 0
+    bins = np.arange(0, 4.0001, 0.2)
+    h1, _, _ = ax[1].hist(rp[conf], bins=bins, color="#4393c3", alpha=0.75, density=True, label="passive")
+    h2, _, _ = ax[1].hist(ra, bins=bins, color=C_SAD, alpha=0.6, density=True, label="with CPG")
+    ax[1].axvline(1, color=C_INK, lw=0.8, ls="--")
+    lin_axis(ax[1], "x", 0, 4, step=1); lin_axis(ax[1], "y", 0, max(h1.max(), h2.max()), n=4)
+    ax[1].set_xlabel(r"position of stable holding $x/x_{peak}$"); ax[1].set_ylabel("density")
+    ax[1].legend(loc="upper right", fontsize=8.5)
+    panel(ax[1], "(b)")
+    # (c) uniform flow: drift against muscle gain
+    G_SCAN = np.linspace(0.0, 120.0, C2["drift"].shape[2])
+    cts = s17["C_uniform_flow"]["C2"]["c_T_scan"]
+    colc = {0.0: C_MUTE, 0.1: C_SAD, 0.3: C_NODE}
+    gmask = G_SCAN <= 60.0 + 1e-9
+    for i, cT in enumerate(cts):
+        dr = np.where(C2["drift"][:, i, :] == 0.0, np.nan, C2["drift"][:, i, :])[:, gmask]
+        dmed = np.nanmedian(dr, 0)
+        q1, q3 = np.nanpercentile(dr, [25, 75], 0)
+        ax[2].fill_between(G_SCAN[gmask], q1, q3, color=colc.get(cT, C_INK), alpha=0.2, lw=0)
+        ax[2].plot(G_SCAN[gmask], dmed, color=colc.get(cT, C_INK), ls="--" if cT == 0 else "-", label=rf"$c_T={cT:g}$")
+    ax[2].axhline(0, color=C_UN, lw=0.6)
+    ax[2].axvline(16, color=C_INK, lw=0.8, ls=":")
+    lin_axis(ax[2], "x", 0, 60, step=20); lin_axis(ax[2], "y", -1.5, 1.5, step=0.5)
+    ax[2].set_xlabel("muscle gain $g$"); ax[2].set_ylabel(r"drift ($\lambda$ per period)")
+    ax[2].legend(loc="lower left", fontsize=8.5)
+    panel(ax[2], "(c)")
+    # (d) fraction of runs still within +/- 0.25 wavelengths of the start: wake against uniform flow
+    tags, tl, xs, x0 = C4["tags"], C4["tloss"], C4["xs"].astype(float), C4["x0"]
+    T = xs.shape[1]; t = np.arange(1, T + 1)
+    Dlab = [0.003, 0.01]
+    for lv in sorted(set(int(v) for v in tags[:, 0])):
+        for cond, ls in ((0, "-"), (1, "--")):
+            m = (tags[:, 0] == lv) & (tags[:, 1] == cond)
+            out = np.abs(xs[m] - x0[m][:, None]) > 0.25
+            lost = np.isfinite(tl[m])[:, None] & (t[None, :] >= tl[m][:, None])
+            inside = ~np.maximum.accumulate(out | lost, axis=1)
+            ax[3].plot(np.concatenate([[0], t]), np.concatenate([[1.0], inside.mean(0)]), ls,
+                       color=C_NODE if lv == 0 else C_SAD,
+                       label=f"{'wake' if cond == 0 else 'uniform'}, $D={Dlab[lv]:g}$")
+    lin_axis(ax[3], "x", 0, 100, step=25); lin_axis(ax[3], "y", 0, 1, step=0.25)
+    ax[3].set_xlabel("time (periods)"); ax[3].set_ylabel(r"within $\pm0.25\lambda$")
+    ax[3].legend(loc="upper right", fontsize=8, handlelength=1.6)
+    panel(ax[3], "(d)")
+    save(fig, "Fig8_biology")
+    CAPTIONS["Fig8"] = "Passive fates, holding positions and the uniform-flow control (Script 17)."
+
 # =============================================================================
 # TABLES
 # =============================================================================

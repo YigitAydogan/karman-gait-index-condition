@@ -9,7 +9,7 @@ The study is entirely computational. A Stuart-Landau central pattern generator (
 ## Repository layout
 
 ```
-scripts/                      21 Python scripts, run in numerical order
+scripts/                      22 Python scripts, run in numerical order
 outputs/karman_gait_project/  every saved output (results, checkpoints, summaries, tables, figures)
 MANIFEST.sha256               SHA-256 checksum of every file in outputs/
 requirements.txt              Python packages
@@ -34,11 +34,12 @@ Each script writes to its own folder, `outputs/karman_gait_project/<script name>
 | 09 `model_structure` | 16 model variants and 20 joint parameter samples | Secs. V and VII, Tables II and V, Fig. 5b |
 | 10 `continuation` | Pseudo-arclength continuation, folds, torus bifurcations, areas | Secs. V and VI, Tables II and III, Figs. 4, 5c and 6 |
 | 11 `noise_predictions` | Reaching the station, noise, phase signature, lateral line, flow speed | Sec. VIII, Tables VII and IX, Fig. 7 |
-| 12 `verification` | Convergence, exact versus finite-difference multipliers, recomputation | Sec. V, Table II, Appendix C, Table X |
-| 13 `figures` | All figures and tables from the saved outputs | Figs. 1 to 7, Tables I to X |
+| 12 `verification` | Convergence, exact versus finite-difference multipliers, recomputation | Sec. V, Table II, Appendix C, Table XI |
+| 13 `figures` | All figures and tables from the saved outputs | Figs. 1 to 8, Tables I to XI |
 | 14 `referee_analyses` | Exclusive areas, orbit accounting, passive bounds, residence bouts, phase discrimination, hypothesis margins, phase-lag sweep, confinement, stochastic time step | Secs. III, V, VI and VIII, Tables II to IV, VII and VIII |
 | 15 `collect_bundle` | Collects all outputs into one archive | Repository |
-| 16 `branch_change_check` | Identifies the single branch change of the convergence check | Appendix C, Table X |
+| 16 `branch_change_check` | Identifies the single branch change of the convergence check | Appendix C, Table XI |
+| 17 `biology_questions` | Fate of passive bodies, position of stable holding relative to the vortex peak, control experiment in uniform flow | Sec. IX, Fig. 8, Table X |
 
 Scripts 04, 04b and 07 are kept for completeness; their results were superseded by later scripts and are not used in the manuscript.
 
@@ -47,7 +48,7 @@ Scripts 04, 04b and 07 are kept for completeness; their results were superseded 
 The scripts were written for Google Colab. Each one is self-contained: paste it into a single cell and run it. It mounts Google Drive and reads and writes `MyDrive/karman_gait_project/`. Outside Colab, the scripts use `./karman_gait_project/` relative to the working directory.
 
 * Scripts 01 to 09 need only NumPy and Matplotlib and run on a CPU.
-* Scripts 10, 11, 12, 14 and 16 use JAX and were run on an NVIDIA L4 GPU. They also run on a CPU, more slowly.
+* Scripts 10, 11, 12, 14, 16 and 17 use JAX and were run on an NVIDIA L4 GPU. They also run on a CPU, more slowly.
 * Every long script saves checkpoints. If a run stops, running the script again resumes it.
 * Most scripts have a `MODE` setting: `"FULL"` reproduces the manuscript, `"QUICK"` is a short test.
 

@@ -12,3 +12,5 @@
 
 **Fig7.** Predictions. (a) Probability of reaching station holding from random initial conditions (x uniform in [0.3, 1.5] lambda, random rhythm phase), delay pi/2; dots: stable period-1 holding from continuation. (b) Tail-beat phase relative to the local transverse wake velocity on the saddle and node branches at delay pi/2; filled: deterministic, all classified stable points; lines: during holding bouts with joint noise D = 0.003. (c) Holding probability as flow speed changes with the fish's intrinsic frequencies fixed in physical time (trout scaling, U_ref = 3.68 body lengths per second). Bout durations are in Table T6. P_hold: holding probability.
 
+**Fig8.** Passive fates, holding positions and the uniform-flow control (Script 17).
+
