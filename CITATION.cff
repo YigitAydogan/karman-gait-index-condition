@@ -12,8 +12,8 @@ authors:
     affiliation: "Department of Computer Science, Aberystwyth University"
 repository-code: "https://github.com/YigitAydogan/karman-gait-index-condition"
 license: MIT
-version: "1.0.0"
-date-released: "2026-10-21"
+version: "1.2.0"
+date-released: "2026-11-18"
 keywords:
   - entrainment
   - Floquet theory

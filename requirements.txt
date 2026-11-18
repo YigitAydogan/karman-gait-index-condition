@@ -2,3 +2,4 @@ numpy>=1.26
 matplotlib>=3.8
 jax>=0.4.30
 pillow>=10.0
+scipy>=1.11

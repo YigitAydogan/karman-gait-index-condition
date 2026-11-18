@@ -1,0 +1,19 @@
+{
+ "phase lag 0": {
+  "orbits": 6928,
+  "stable": 1365,
+  "stable_phase_min": 0.43678016281119314,
+  "stable_phase_max": 2.760297452151607,
+  "unstable_inside_window": 521,
+  "circular_mean_saddle-real": 1.4805566482175712
+ },
+ "phase lag pi/2": {
+  "orbits": 18155,
+  "stable": 2481,
+  "stable_phase_min": 0.45761168107772066,
+  "stable_phase_max": 2.096745056576089,
+  "unstable_inside_window": 923,
+  "circular_mean_saddle-real": 1.206758021938663,
+  "circular_mean_node": 1.7145992922734088
+ }
+}

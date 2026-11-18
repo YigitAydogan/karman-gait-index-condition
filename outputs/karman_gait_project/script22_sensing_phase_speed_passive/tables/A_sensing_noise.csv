@@ -1,0 +1,9 @@
+D,condition,orbits,runs,residence_median,leave_0.1_median,leave_0.25_median,lost_frac
+0.003,proprioception only,26,1664,62.23,11.0,35.0,0.9993990384615384
+0.003,lateral line only,8,512,38.01,11.0,25.0,1.0
+0.003,both senses,6,384,55.23,11.0,33.0,1.0
+0.003,both senses, lateral line removed,6,384,31.990000000000002,8.0,17.0,1.0
+0.01,proprioception only,26,1664,27.16,7.0,15.0,1.0
+0.01,lateral line only,8,512,22.630000000000003,7.0,13.0,1.0
+0.01,both senses,6,384,24.3,7.0,14.0,1.0
+0.01,both senses, lateral line removed,6,384,22.720000000000002,7.0,13.0,1.0
